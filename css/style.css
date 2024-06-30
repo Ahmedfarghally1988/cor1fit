@@ -1,0 +1,314 @@
+body{
+    font-family: 'ae_AlArabiya';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.navbar-brand:hover{
+    border: 1px solid #fcba00 !important;
+    background: #fcba00;
+
+}
+
+.rtl{
+    direction: rtl;
+
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+    padding: 0 15px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #fcba00;
+}
+
+.block_slidre{
+    height: 90vh;
+    overflow: hidden;
+}
+
+.des-slider{
+    top: 40%;
+}
+
+.bg-slider{
+    bottom: -7px;
+}
+.bg-slider img{
+    height: 130px;
+    width: 100%;
+}
+
+.btn-hover:hover{
+    background: #fcba00;
+    color:#fff;
+    border: 1px solid #fcba00 !important;
+}
+
+.img-about-home{
+    height: 300px;
+    overflow: hidden;
+    border-radius: 100px;
+    max-width: 200px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.img-about-home img{
+    width: auto;
+    min-height: 100%;
+}
+
+.box-muscle{
+    transition-duration: 1s;
+}
+.box-muscle:hover{
+    transform: scale(1.1);
+}
+
+.box-main-program{
+    width: 100%;
+    height: 235px;
+}
+
+.icon-play{
+    top: 30%;
+    font-size: 70px;
+}
+
+.icon-play i:hover{
+  color: #fcba00 !important;
+}
+
+.more-play{
+    background: #fcba00;
+    color: #fff;
+    padding: 10px;
+    margin: 30px auto 0 auto;
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    border: 2px solid #fcba00;
+}
+
+.more-play:hover{
+    color: #000;
+    background: transparent;
+}
+
+.banner--main{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.banner--main:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 0;
+    background: rgb(0 0 0 / 60%);
+    height: 100%;
+}
+
+.health_pro .d-flex .col-md-4:nth-child(2) .block_health_pro{
+    background: #ddd;
+    color: #000;
+}
+.health_pro .d-flex .col-md-4:nth-child(2) .block_health_pro:hover{
+    background: #000;
+    color: #fff;
+}
+
+.block_health_pro{
+    background: #000;
+    color: #fff;
+    cursor: move;
+}
+.icon-health{
+    font-size: 4rem;
+}
+
+.block_health_pro:hover{
+    background: #ddd;
+    color: #000;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper_team{
+    height: 400px;
+}
+
+.box-teamwork{
+    width: 100%;
+}
+.box-teamwork a{
+    text-decoration: none;
+}
+
+
+.client{
+    background: #eee;
+    padding: 50px 0;
+}
+.box--desc--clients{
+    height: 330px;
+}
+.client-box {
+    box-shadow: 0 0 10px #ddd;
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    width: 65%;
+    margin-right: auto;
+    margin-left: 70px;
+}
+.client-box-img {
+    width: 75px;
+    height: 75px;
+    margin: 0 0 0 15px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    float: right;
+}
+.audio_client {
+    text-align: right;
+    float: right;
+    width: 65%;
+}
+.fa.fa-quote-left {
+    display: block;
+    text-align: center;
+}
+.audio_client small {
+    text-align: right;
+    display: block;
+}
+
+.box-banner-bottom{
+    height: 175px;
+    overflow: hidden;
+}
+
+.box-banner-bottom:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+}
+
+.info_footer{
+    background: #fcba00;
+    padding: 30px 0;
+}
+
+.menu--footer a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.menu--footer a:hover{
+    text-decoration: underline;
+}
+
+.bg-block-client{
+    right: 0;
+    width: 35%;
+    height: 330px;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1024px) {
+     header{
+         background: #000;
+     }
+    .btn-dark{
+        order: -1;
+    }
+    .bg-block-client{
+        display: none;
+    }
+    .client-box {
+        width: 100%;
+        margin-left: 0;
+    }
+    .box-banner-bottom {
+        height: auto;
+        padding: 30px 0;
+    }
+    .info_footer{
+        text-align: center;
+    }
+    .col-one-footer{
+        text-align: center;
+    }
+    .box-banner-bottom img{
+        min-height: 100%;
+    }
+    .navbar-nav .nav-item .nav-link {
+        padding: 5px 15px;
+    }
+    .dropdown-toggle::after{
+        right: 75%;
+        position: relative;
+    }
+    .position-mobile-relative{
+        position: relative !important;
+    }
+    .des-slider {
+        top: 40px;
+    }
+    .block_slidre {
+        height: auto;
+    }
+    .bg-slider img {
+        height: 80px;
+    }
+
+    .des-about{
+        text-align: center;
+    }
+    .img-about-home{
+        margin: auto;
+    }
+}
+@media screen and (min-device-width: 1401px) and (max-device-width: 2000px) {
+
+}
