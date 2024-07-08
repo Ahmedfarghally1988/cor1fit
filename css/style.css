@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 body{
-    font-family: 'ae_AlArabiya';
-    font-weight: normal;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+
     font-style: normal;
-    font-display: swap;
+    font-variation-settings: "slnt" 0;
 }
 
 .navbar-brand:hover{
     border: 1px solid #fcba00 !important;
     background: #fcba00;
 
+}
+
+a{
+    text-decoration: none;
 }
 
 .rtl{
@@ -25,7 +31,6 @@ body{
 }
 
 .block_slidre{
-    height: 90vh;
     overflow: hidden;
 }
 
@@ -37,7 +42,7 @@ body{
     bottom: -7px;
 }
 .bg-slider img{
-    height: 130px;
+    height: 100px;
     width: 100%;
 }
 
@@ -48,25 +53,53 @@ body{
 }
 
 .img-about-home{
-    height: 300px;
-    overflow: hidden;
-    border-radius: 100px;
-    max-width: 200px;
-    margin-left: auto;
+    position: relative;
+    margin: 30px 0;
     display: flex;
-    align-items: center;
+    height: 400px;
 }
 
-.img-about-home img{
-    width: auto;
-    min-height: 100%;
+.img-about-home img:nth-child(1){
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 25px;
+    height: 350px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.img-about-home img:nth-child(2){
+    position: absolute;
+    right: 35%;
+    top: 70px;
+    border-radius: 25px;
+    height: 350px;
+    width: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.des-about{
+    margin: 50px 0 0 0;
+}
+
+.des-about h3{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0 0 30px 0;
 }
 
 .box-muscle{
+    position: relative;
     transition-duration: 1s;
 }
 .box-muscle:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.nu_block{
+    position: absolute;
 }
 
 .box-main-program{
@@ -92,6 +125,22 @@ body{
     width: 150px;
     text-decoration: none;
     border: 2px solid #fcba00;
+    border-radius: 50px;
+}
+
+.accordion-button::after{
+    transform: none;
+    font-family: 'Font Awesome 6 Free';
+    content: "\2b";
+    background-image: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: none;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: "\f068";
+    background-image: none;
 }
 
 .more-play:hover{
@@ -113,6 +162,17 @@ body{
     border: 0;
     background: rgb(0 0 0 / 60%);
     height: 100%;
+}
+
+.nu_block{
+    font-weight: bold;
+    font-size: 230px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    line-height: 230px;
+    z-index: -1;
+    color: rgb(0 0 0 / 6%);
 }
 
 .health_pro .d-flex .col-md-4:nth-child(2) .block_health_pro{
@@ -190,19 +250,44 @@ swiper-slide img {
     margin-left: 70px;
 }
 .client-box-img {
-    width: 75px;
-    height: 75px;
-    margin: 0 0 0 15px;
-    border-radius: 100%;
     overflow: hidden;
-    border: 2px solid #ddd;
     float: right;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
+    direction: rtl;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
 }
 .audio_client {
     text-align: right;
     float: right;
     width: 65%;
 }
+
+.audio_client h4{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
+
+.icon-qu{
+    margin: 0 0 15px 0;
+}
+
+.thum--pro{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.name--pro{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
 .fa.fa-quote-left {
     display: block;
     text-align: center;
@@ -210,6 +295,8 @@ swiper-slide img {
 .audio_client small {
     text-align: right;
     display: block;
+    font-weight: normal;
+    margin: 10px 0 0 0;
 }
 
 .box-banner-bottom{
@@ -253,6 +340,60 @@ swiper-slide img {
     border-radius: 10px;
     overflow: hidden;
 }
+
+.logo img{
+    filter: invert(1);
+    height: 75px;
+}
+
+
+.newClass{
+    position: fixed !important;
+    z-index: 9999 !important;
+    background: #fff !important;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.newClass .logo img{
+    filter: unset;
+}
+
+.newClass .navbar-nav .nav-item .nav-link {
+    color: #000;
+    padding: 0 15px;
+}
+
+.newClass .icon--moon{
+    color: #000 !important;
+}
+
+.newClass .login--botton{
+    color: #000 !important;
+    border: 1px solid #000 !important;
+}
+
+.newClass .login--botton:hover{
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+.style-video{
+    border-radius: 0 0 100px 100px;
+    position: relative;
+}
+
+.overlay-video{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(0 0 0 / 60%);
+    border-radius: 0 0 100px 100px;
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -312,3 +453,4 @@ swiper-slide img {
 @media screen and (min-device-width: 1401px) and (max-device-width: 2000px) {
 
 }
+

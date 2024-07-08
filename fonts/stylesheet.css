@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'ae_AlArabiya';
-    src: url('ae_AlArabiya.woff2') format('woff2'),
-        url('ae_AlArabiya.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-

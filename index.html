@@ -12,22 +12,21 @@
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
-    <link rel="stylesheet" href="fonts/stylesheet.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
+
 </head>
 
 <header>
-    <div class="position-mobile-relative position-absolute start-0 end-0 z-3">
+    <div class="position-mobile-relative header-sticky position-absolute start-0 end-0 z-3">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand border text-white border-white fs-6 px-2" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
+                <a class="login--botton navbar-brand border text-white border-white fs-6 px-2" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                 </button>
-                <div class="px-3 fs-5 btn-dark"> <a href="#" class="text-white"> <i class="fa-solid fa-moon"></i> </a> </div>
+                <div class="px-3 fs-5 btn-dark"> <a href="#" class="icon--moon text-white"> <i class="fa-solid fa-moon"></i> </a> </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto rtl mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -76,23 +75,26 @@
     </div>
 </header>
 
+
+
 <section class="bannerHome">
     <div class="block_slidre position-relative">
-        <img class="img-fluid" src="images/slider.jpg" alt="" title="" width="auto" height="auto">
+        <video width="100%" class="style-video" height="100%"   autoplay muted loop>
+            <source src="images/5fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-video"></div>
         <div class="des-slider text-center text-white start-0 end-0 position-absolute">
             <h3 class="fs-1">مدربك معاك اينما كنت</h3>
             <p class="text-info fs-3 mb-4">مدرب الكور الشخصي هو دليلك الأول لتدريب خال من المخاطر لتعيش حياة صحية ورياضية آمنة</p>
             <a href="#" class="border py-2 px-4 rounded-pill mt-3 m-auto text-white btn-hover"> سجل الان </a>
         </div>
-        <div class="bg-slider position-absolute start-0 end-0">
-            <img src="images/Frame26.png" alt="" title="" class="img-fluid">
-        </div>
     </div>
 </section>
 <section class="about--home">
     <div class="container">
+
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-6">
                 <div class="des-about pt-5 rtl">
                     <h3>نساعدك في التخلص من إصابات والآم أسفل الظهر المزمنة</h3>
                     <p>تشير الإحصائيات إلى أن إصابات أسفل الظهر المزمنة الغير معلومة السبب تعدت 50 % وأثبتت الأبحاث الحديثة أن ذلك بسبب ضعف عضلات الكور العميقة. وكذلك الانفصال العضلي والانزلاق الغضروفي والفتق ومشاكل كثيرة متعلقة بالنساء والرجال سببها ضعف عضلات الكور العميقة.
@@ -101,9 +103,12 @@
                     <p>  وأيضا ضعف الأداء الرياضي وعدم التناسق بين العضلات في القوة اوالحجم من اهم أسبابه ضعف عضلات الكور العميقة</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="img-about-home">
-                    <img src="images/Joe_Photo_011.png" alt="" title="" width="auto" height="auto" class="img-fluid">
+
+                    <img src="images/pexels.jpg" alt="" title="" width="auto" height="auto" class="img-fluid">
+                    <img src="images/banner3.png" alt="" title="" width="auto" height="auto" class="img-fluid">
+
                 </div>
             </div>
         </div>
@@ -113,6 +118,7 @@
                     <img src="images/bone2.png" alt="" title="" width="100" height="100">
                     <h3 class="fs-5 mt-3">تقييم عضلات ومفاصل الكور</h3>
                     <p class="text-secondary">نقوم بتصميم برنامجك التدريبي وفقا لنتائج التقيمات السابقة مع متابعة تنفيذ البرنامج التدريبي</p>
+                    <label class="nu_block"> 1 </label>
                 </div>
             </div>
             <div class="col-md-4 col-12 mt-5">
@@ -120,6 +126,7 @@
                     <img src="images/core-m2.png" alt="" title="" width="100" height="100">
                     <h3 class="fs-5 mt-3">تقييم عضلات الكور</h3>
                     <p class="text-secondary">نقوم بتصميم برنامجك التدريبي وفقا لنتائج التقيمات السابقة مع متابعة تنفيذ البرنامج التدريبي</p>
+                    <label class="nu_block"> 2 </label>
                 </div>
             </div>
             <div class="col-md-4 col-12 mt-5">
@@ -127,9 +134,12 @@
                     <img src="images/time2.png" alt="" title="" width="100" height="100">
                     <h3 class="fs-5 mt-3">تصميم البرنامج التدريبي</h3>
                     <p class="text-secondary">نقوم بتصميم برنامجك التدريبي وفقا لنتائج التقيمات السابقة مع متابعة تنفيذ البرنامج التدريبي</p>
+                    <label class="nu_block"> 3 </label>
                 </div>
             </div>
         </div>
+
+
     </div>
 </section>
 <section class="programs bg-light py-5 mt-5">
@@ -180,7 +190,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-12">
-                <div class="desc--banner text-center position-relative text-white pt-5">
+                <div class="desc--banner text-center position-relative text-white pt-5 pb-4">
                     <h3>نساعدك في التخلص من إصابات والآم أسفل الظهر المزمنة</h3>
                     <p>تشير الإحصائيات إلى أن إصابات أسفل الظهر المزمنة الغير معلومة السبب تعدت 50 % وأثبتت الأبحاث الحديثة أن ذلك بسبب ضعف عضلات الكور العميقة. وكذلك الانفصال العضلي والانزلاق الغضروفي والفتق ومشاكل كثيرة متعلقة بالنساء والرجال سببها ضعف عضلات الكور العميقة. وأيضا ضعف الأداء الرياضي وعدم التناسق بين العضلات في القوة اوالحجم من اهم أسبابه ضعف عضلات الكور العميقة</p>
                     <a href="#" class="icon-play" data-bs-toggle="modal" data-bs-target="#exampleModalBanner">  <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i> </a>
@@ -189,96 +199,8 @@
         </div>
     </div>
 </section>
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <h3 class="fs-2">سؤال وجواب عن التدريب الشخصي</h3>
-                    <p class="fs-5">لدينا نخبة من المتخصصين الحاصلين على شهادات عالمية معتمدة وسنوات خبرة طويلة</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 m-auto">
-                <div class="section-fqa rtl">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fs-5 text-black bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    ما هي خدمة التدريب الشخصي اونلاين ؟
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-light-emphasis">
-                                    <p>هي خدمة مدفوعه أقدمها عبر الأنترنت من خلالها سأكون مدربك الشخصي وأنشأ لك كافة برامجك الرياضية والغذائيه التي تناسب وضع جسمك وهدفك مع متابعة تطورات جسمك بلأضافة الى الأجابه على استفسارتك.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button text-black fs-5 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    هل التدريب الشخصي اونلاين افضل او التدريب مع مدرب داخل الجيم؟
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-light-emphasis">
-                                    <p>هي خدمة مدفوعه أقدمها عبر الأنترنت من خلالها سأكون مدربك الشخصي وأنشأ لك كافة برامجك الرياضية والغذائيه التي تناسب وضع جسمك وهدفك مع متابعة تطورات جسمك بلأضافة الى الأجابه على استفسارتك.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button text-black fs-5 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    هل أحتاج الى مدرب شخصي ؟
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-light-emphasis">
-                                    <p>هي خدمة مدفوعه أقدمها عبر الأنترنت من خلالها سأكون مدربك الشخصي وأنشأ لك كافة برامجك الرياضية والغذائيه التي تناسب وضع جسمك وهدفك مع متابعة تطورات جسمك بلأضافة الى الأجابه على استفسارتك.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="health_pro">
-    <div class="d-flex">
-        <div class="col-md-4 col-4 col-12 p-0">
-            <div class="block_health_pro p-4 text-center position-relative overflow-hidden">
-                <img src="images/banner3.png" alt="" title="" class="img-fluid position-absolute start-0 end-0 top-0 w-100 opacity-25">
-               <div class="position-relative">
-                   <i class="fa-solid fa-dumbbell fa-fade py-4 icon-health"></i>
-                   <h3>توظيف قدراتك البدنية بكفاءة</h3>
-                   <p>البرامج التدريبية الغير مدروسة ستكلفك الكثير من الجهد والوقت والمال دون الوصول للهدف المنشود، معنا بإذن الله ستصل لهدفك ضمن برامج مدروسة وفي أسرع وقت ممك</p>
-               </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-4 col-12 p-0">
-            <div class="block_health_pro p-4 text-center position-relative overflow-hidden">
-                <img src="images/muscular.png" alt="" title="" class="img-fluid position-absolute start-0 end-0 top-0 w-100 opacity-25">
-                <div class="position-relative">
-                    <i class="fa-solid fa-fire fa-fade py-4 icon-health"></i>
-                    <h3>توظيف قدراتك البدنية بكفاءة</h3>
-                    <p>البرامج التدريبية الغير مدروسة ستكلفك الكثير من الجهد والوقت والمال دون الوصول للهدف المنشود، معنا بإذن الله ستصل لهدفك ضمن برامج مدروسة وفي أسرع وقت ممك</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-4 col-12 p-0">
-            <div class="block_health_pro p-4 text-center position-relative overflow-hidden">
-                <img src="images/banner4.jpg" alt="" title="" class="img-fluid position-absolute start-0 end-0 top-0 w-100 opacity-25">
-                <div class="position-relative">
-                    <i class="fa-regular fa-hand fa-fade py-4 icon-health"></i>
-                    <h3>توظيف قدراتك البدنية بكفاءة</h3>
-                    <p>البرامج التدريبية الغير مدروسة ستكلفك الكثير من الجهد والوقت والمال دون الوصول للهدف المنشود، معنا بإذن الله ستصل لهدفك ضمن برامج مدروسة وفي أسرع وقت ممك</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 <section class="team_work py-5">
     <div class="container">
         <div class="row">
@@ -380,43 +302,81 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="box--desc--clients">
-                    <swiper-container class="mySwiper" navigation="true"  free-mode="true">
+
+                    <swiper-container class="mySwiper" pagination="true"  free-mode="true">
                         <swiper-slide class="bg-transparent">
                             <div class="position-absolute bg-block-client">
                                 <img src="images/slider.jpg">
+                                <div class="client-box-img">
+                                    <img src="images/testemonial-1.webp" class="thum--pro" alt="أفضل دورات التدريب الرياضي المعتمدة">
+                                    <label class="name--pro"> برنامج تدريب الكور للمبتدئين </label>
+                                </div>
                             </div>
                             <div class="client-box text-start position-relative">
-                                <div class="client-box-img">
-                                    <img src="images/testemonial-1.webp" alt="أفضل دورات التدريب الرياضي المعتمدة">
-                                </div>
-                                <div class="audio_client">
-                                    <h4> المتدربة تهاني <small class="fs-6"> برنامج التدريب حسب التغيرات الهرمونية </small></h4>
-                                </div>
-                                <div style="clear:both"></div>
-                                <br>
+                                <label class="icon-qu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2rem" viewBox="0 0 40.31 32"><g id="quote" transform="translate(0)"><g id="Group_10098" data-name="Group 10098" transform="translate(0 0)"><path id="Path_12882" data-name="Path 12882" d="M6.509,17.5a10.152,10.152,0,0,0,2.805.41,8.815,8.815,0,0,0,3.517-.721c-.884,3.237-3.008,8.823-7.24,9.452a1,1,0,0,0-.82.723l-.925,3.308a1.005,1.005,0,0,0,.831,1.266A7.024,7.024,0,0,0,5.625,32c5.079,0,10.109-5.3,12.231-12.892C19.1,14.654,19.467,7.958,16.4,3.744A9.162,9.162,0,0,0,8.951,0H8.912a8.915,8.915,0,0,0-2.4,17.5Z" transform="translate(21.539 0)" fill="#be1622"></path><path id="Path_12883" data-name="Path 12883" d="M1.15,13.288A8.935,8.935,0,0,0,6.509,17.5a10.151,10.151,0,0,0,2.8.41,8.817,8.817,0,0,0,3.518-.721c-.884,3.237-3.008,8.823-7.24,9.452a1.006,1.006,0,0,0-.82.723L3.847,30.67a1.005,1.005,0,0,0,.831,1.266A7.015,7.015,0,0,0,5.625,32c5.079,0,10.109-5.3,12.232-12.892C19.1,14.654,19.467,7.959,16.4,3.744A9.161,9.161,0,0,0,8.951,0h-.04A8.915,8.915,0,0,0,1.15,13.288Z" transform="translate(0 0)" fill="#be1622"></path></g></g></svg>
+                                </label>
                                 <p>
-                                    <i class="fa fa-quote-left"></i>الحمد لله تحسن عندي الثبات والتوازن وكان عندي الم بالكتف تحسن جدا والتمارين اشتغلت على العضلات الداخلية بشكل ممتاز
+                                    الحمد لله تحسن عندي الثبات والتوازن وكان عندي الم بالكتف تحسن جدا والتمارين اشتغلت على العضلات الداخلية بشكل ممتاز
                                     <a href="#">المزيد</a>
                                 </p>
+                                <br>
+                                <div class="audio_client">
+                                    <h4>  تهاني <small class="fs-6"> المملكة العربية السعودية </small></h4>
+                                </div>
+                                <div style="clear:both"></div>
+
+
                             </div>
                         </swiper-slide>
                         <swiper-slide class="bg-transparent">
                             <div class="position-absolute bg-block-client">
                                 <img src="images/slider.jpg">
+                                <div class="client-box-img">
+                                    <img src="images/testemonial-1.webp" class="thum--pro" alt="أفضل دورات التدريب الرياضي المعتمدة">
+                                    <label class="name--pro"> برنامج تدريب الكور للمبتدئين </label>
+                                </div>
                             </div>
                             <div class="client-box text-start position-relative">
-                                <div class="client-box-img">
-                                    <img src="images/testemonial-1.webp" alt="أفضل دورات التدريب الرياضي المعتمدة">
-                                </div>
-                                <div class="audio_client">
-                                    <h4> المتدربة تهاني <small class="fs-6"> برنامج التدريب حسب التغيرات الهرمونية </small></h4>
-                                </div>
-                                <div style="clear:both"></div>
-                                <br>
+                                <label class="icon-qu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2rem" viewBox="0 0 40.31 32"><g id="quote" transform="translate(0)"><g id="Group_10098" data-name="Group 10098" transform="translate(0 0)"><path id="Path_12882" data-name="Path 12882" d="M6.509,17.5a10.152,10.152,0,0,0,2.805.41,8.815,8.815,0,0,0,3.517-.721c-.884,3.237-3.008,8.823-7.24,9.452a1,1,0,0,0-.82.723l-.925,3.308a1.005,1.005,0,0,0,.831,1.266A7.024,7.024,0,0,0,5.625,32c5.079,0,10.109-5.3,12.231-12.892C19.1,14.654,19.467,7.958,16.4,3.744A9.162,9.162,0,0,0,8.951,0H8.912a8.915,8.915,0,0,0-2.4,17.5Z" transform="translate(21.539 0)" fill="#be1622"></path><path id="Path_12883" data-name="Path 12883" d="M1.15,13.288A8.935,8.935,0,0,0,6.509,17.5a10.151,10.151,0,0,0,2.8.41,8.817,8.817,0,0,0,3.518-.721c-.884,3.237-3.008,8.823-7.24,9.452a1.006,1.006,0,0,0-.82.723L3.847,30.67a1.005,1.005,0,0,0,.831,1.266A7.015,7.015,0,0,0,5.625,32c5.079,0,10.109-5.3,12.232-12.892C19.1,14.654,19.467,7.959,16.4,3.744A9.161,9.161,0,0,0,8.951,0h-.04A8.915,8.915,0,0,0,1.15,13.288Z" transform="translate(0 0)" fill="#be1622"></path></g></g></svg>
+                                </label>
                                 <p>
-                                    <i class="fa fa-quote-left"></i>الحمد لله تحسن عندي الثبات والتوازن وكان عندي الم بالكتف تحسن جدا والتمارين اشتغلت على العضلات الداخلية بشكل ممتاز
+                                    الحمد لله تحسن عندي الثبات والتوازن وكان عندي الم بالكتف تحسن جدا والتمارين اشتغلت على العضلات الداخلية بشكل ممتاز
                                     <a href="#">المزيد</a>
                                 </p>
+                                <br>
+                                <div class="audio_client">
+                                    <h4>  تهاني <small class="fs-6"> المملكة العربية السعودية </small></h4>
+                                </div>
+                                <div style="clear:both"></div>
+
+
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide class="bg-transparent">
+                            <div class="position-absolute bg-block-client">
+                                <img src="images/slider.jpg">
+                                <div class="client-box-img">
+                                    <img src="images/testemonial-1.webp" class="thum--pro" alt="أفضل دورات التدريب الرياضي المعتمدة">
+                                    <label class="name--pro"> برنامج تدريب الكور للمبتدئين </label>
+                                </div>
+                            </div>
+                            <div class="client-box text-start position-relative">
+                                <label class="icon-qu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2rem" viewBox="0 0 40.31 32"><g id="quote" transform="translate(0)"><g id="Group_10098" data-name="Group 10098" transform="translate(0 0)"><path id="Path_12882" data-name="Path 12882" d="M6.509,17.5a10.152,10.152,0,0,0,2.805.41,8.815,8.815,0,0,0,3.517-.721c-.884,3.237-3.008,8.823-7.24,9.452a1,1,0,0,0-.82.723l-.925,3.308a1.005,1.005,0,0,0,.831,1.266A7.024,7.024,0,0,0,5.625,32c5.079,0,10.109-5.3,12.231-12.892C19.1,14.654,19.467,7.958,16.4,3.744A9.162,9.162,0,0,0,8.951,0H8.912a8.915,8.915,0,0,0-2.4,17.5Z" transform="translate(21.539 0)" fill="#be1622"></path><path id="Path_12883" data-name="Path 12883" d="M1.15,13.288A8.935,8.935,0,0,0,6.509,17.5a10.151,10.151,0,0,0,2.8.41,8.817,8.817,0,0,0,3.518-.721c-.884,3.237-3.008,8.823-7.24,9.452a1.006,1.006,0,0,0-.82.723L3.847,30.67a1.005,1.005,0,0,0,.831,1.266A7.015,7.015,0,0,0,5.625,32c5.079,0,10.109-5.3,12.232-12.892C19.1,14.654,19.467,7.959,16.4,3.744A9.161,9.161,0,0,0,8.951,0h-.04A8.915,8.915,0,0,0,1.15,13.288Z" transform="translate(0 0)" fill="#be1622"></path></g></g></svg>
+                                </label>
+                                <p>
+                                    الحمد لله تحسن عندي الثبات والتوازن وكان عندي الم بالكتف تحسن جدا والتمارين اشتغلت على العضلات الداخلية بشكل ممتاز
+                                    <a href="#">المزيد</a>
+                                </p>
+                                <br>
+                                <div class="audio_client">
+                                    <h4>  تهاني <small class="fs-6"> المملكة العربية السعودية </small></h4>
+                                </div>
+                                <div style="clear:both"></div>
+
+
                             </div>
                         </swiper-slide>
                     </swiper-container>
@@ -441,7 +401,62 @@
         </div>
     </div>
 </section>
-
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h3 class="fs-2">سؤال وجواب عن التدريب الشخصي</h3>
+                    <p class="fs-5">لدينا نخبة من المتخصصين الحاصلين على شهادات عالمية معتمدة وسنوات خبرة طويلة</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 m-auto">
+                <div class="section-fqa rtl">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-5 text-black bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ما هي خدمة التدريب الشخصي اونلاين ؟
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-light-emphasis">
+                                    <p>هي خدمة مدفوعه أقدمها عبر الأنترنت من خلالها سأكون مدربك الشخصي وأنشأ لك كافة برامجك الرياضية والغذائيه التي تناسب وضع جسمك وهدفك مع متابعة تطورات جسمك بلأضافة الى الأجابه على استفسارتك.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-black fs-5 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    هل التدريب الشخصي اونلاين افضل او التدريب مع مدرب داخل الجيم؟
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-light-emphasis">
+                                    <p>هي خدمة مدفوعه أقدمها عبر الأنترنت من خلالها سأكون مدربك الشخصي وأنشأ لك كافة برامجك الرياضية والغذائيه التي تناسب وضع جسمك وهدفك مع متابعة تطورات جسمك بلأضافة الى الأجابه على استفسارتك.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-black fs-5 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    هل أحتاج الى مدرب شخصي ؟
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-light-emphasis">
+                                    <p>هي خدمة مدفوعه أقدمها عبر الأنترنت من خلالها سأكون مدربك الشخصي وأنشأ لك كافة برامجك الرياضية والغذائيه التي تناسب وضع جسمك وهدفك مع متابعة تطورات جسمك بلأضافة الى الأجابه على استفسارتك.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <footer>
@@ -545,41 +560,16 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    const swiperEl = document.querySelector('swiper-container')
-    Object.assign(swiperEl, {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-            clickable: true,
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-            },
-            1024: {
-                slidesPerView: 5,
-                spaceBetween: 50,
-            },
-        },
-    });
-    swiperEl.initialize();
-</script>
-
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-element-bundle.min.js"></script>
 <script src="js/script.js"></script>
-</body>
 
+
+
+
+
+
+
+</body>
 </html>
