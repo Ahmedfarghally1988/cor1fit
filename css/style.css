@@ -390,11 +390,17 @@ swiper-slide img {
     width: 100%;
     left: 0;
     right: 0;
-    background: rgb(0 0 0 / 60%);
+    background: rgb(0 0 0 / 75%);
     border-radius: 0 0 100px 100px;
 }
 
+.about--home{
+    margin: 100px 0 0 0;
+}
 
+.accordion-button:focus {
+    box-shadow: 0 0 0;
+}
 
 @media screen and (max-width: 1024px) {
      header{
