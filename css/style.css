@@ -852,6 +852,190 @@ hr{
     background-color: #eee;
 }
 
+
+.block-des-program{
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0 0 0;
+}
+
+.block-des-program h3{
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+}
+
+.block-des-program div{
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 1px dashed #f1f1f1;
+}
+
+.block-des-program div span{
+    font-weight: bold;
+}
+
+.btn-bookNow{
+    background: #fcba00;
+    border: 1px solid #fcba00;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.btn-bookNow:hover{
+    background: #fff;
+    color: #000;
+}
+
+.block-form-program{
+    background: #fcba00;
+    padding: 15px;
+    margin: 15px 0 0 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.block-form-program h3{
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff4a;
+    padding: 0 0 10px 0;
+}
+
+.block-form-program label{
+    font-size: 13px;
+}
+
+.block-form-program .input-main{
+    height: 40px;
+}
+
+.btn-form-pro{
+    background: #000;
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    border:1px solid #000;
+}
+
+.btn-form-pro:hover{
+    background: #fff;
+    color: #000;
+    border:1px solid #000;
+}
+
+.main-img-program{
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+.main-img-program img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.desc--program ul{
+    padding: 0 25px 0 0;
+}
+
+.desc-video-program{
+    padding: 0 15px;
+}
+.desc-video-program h3{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 5px 0 20px 0;
+}
+.desc-video-program p{
+    margin: 0 0 7px 0;
+    font-size: 17px;
+}
+
+.page_login{
+    box-shadow: 0 0 10px #ddd;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+.page_login h3{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+.page_login i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ddd;
+}
+
+.page_login input{
+    padding-right: 40px;
+}
+
+.page_login input::placeholder{
+    color: #ddd;
+}
+
+.page_login input[type="checkbox"]{
+    padding: 0;
+}
+
+.page_login p{
+    font-size: 13px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.blockOneProgram{
+    box-shadow: 0 0 10px #ddd;
+    margin: 30px 0 0 0;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.blockOneProgram h3 a{
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.blockOneProgram h3 a:hover{
+    text-decoration: underline;
+}
+
+.blockOneProgram label{
+    font-size: 22px;
+    color: #1fc900;
+}
+.blockOneProgram label small{
+    font-size: 12px;
+}
+
+.blockOneProgram span{
+    margin: 25px 0;
+    color: #8f8282;
+}
+
 @media screen and (max-width: 1024px) {
      header{
          background: #000;
