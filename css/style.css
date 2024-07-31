@@ -1036,6 +1036,311 @@ hr{
     color: #8f8282;
 }
 
+.my_profile{
+    margin: 30px 0;
+}
+
+.sidebar-profile{
+    list-style-type: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 15px;
+}
+
+.sidebar-profile button.active,
+.sidebar-profile button:hover{
+    background: #eee !important;
+    border-color: #eee !important;
+}
+.sidebar-profile button{
+    color: #000;
+    padding: 15px 10px;
+    display: block;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    text-align: right;
+}
+.sidebar-profile li a i{
+    margin: 0 0 0 5px;
+    font-size: 15px;
+}
+
+.box_tabs_style {
+    margin: 0;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 10px #ddd;
+}
+.profile-edit h2 {
+    color: #323232;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.block-profile-info{
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    border-top: 1px solid #eee;
+    padding: 15px 0 0 0;
+}
+.block-profile-info dt{
+    width: 150px;
+    border-left: 1px solid #eee;
+    font-weight: normal;
+}
+
+.btn-edit-profile{
+    background: #fcba00;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 30px 0 0 0;
+    display: block;
+    width: 100%;
+}
+
+
+.calendar-container {
+    position: relative;
+    width: 100%;
+}
+
+.calendar-container header {
+    border-radius: 1em 1em 0 0;
+    background: #e66b6b;
+    color: #fff;
+    padding: 2em 2em;
+}
+
+.day {
+    font-size: 95px;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.month {
+    font-size: 3em;
+    line-height: 1em;
+    text-transform: lowercase;
+}
+
+.calendar {
+    background: #fff;
+    border-radius: 0 0 1em 1em;
+    -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #fff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 3px 1px #fff;
+    color: #555;
+    display: inline-block;
+    padding: 30px 0 15px 0;
+    width: 100%;
+}
+
+.head-thead{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.head-tbody{
+    width: 100%;
+    display: block;
+}
+
+.head-tbody tr{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calendar thead {
+    color: #e66b6b;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+}
+
+
+.calendar td a{
+    color: #000;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 19px;
+    border-radius: 50px;
+}
+
+.current-day {
+    color: #e66b6b;
+}
+
+.prev-month a,
+.next-month a {
+    color: #cacaca !important;
+
+}
+
+.calendar tbody td a:hover ,
+.calendar td a.active{
+    color: #fff !important;
+    background: #cacaca;
+    display: block;
+}
+
+.ring-left,
+.ring-right {
+    position: absolute;
+    top: 180px;
+}
+
+.ring-left { left: 2em; }
+.ring-right { right: 2em; }
+
+.ring-left:before,
+.ring-left:after,
+.ring-right:before,
+.ring-right:after {
+    background: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, .3), 0 -1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, .3), 0 -1px 1px rgba(0, 0, 0, .2);
+    content: "";
+    display: inline-block;
+    margin: 8px;
+    height: 32px;
+    width: 8px;
+}
+.blockDayOne{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 0 10px 0;
+    position: relative;
+    margin: 0 0 20px 0;
+}
+.blockDayOne strong{
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    font-size: 130px;
+    left: 0;
+    opacity: 0.75;
+    line-height: 150px;
+}
+.blockDayOne img{
+    width: 100%;
+    object-fit: fill;
+}
+.blockDayOne label{
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+.blockDayOne p{
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 10px 8px 10px;
+    background: #eee;
+    margin: 0 15px 5px 15px;
+    border-radius: 5px;
+}
+
+.icon-play-video{
+    color: #fff;
+    top: 15px;
+    right: 15px;
+    font-size: 48px;
+}
+.tit-pay{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+    margin: 0 0 0 0;
+}
+.type-pay{
+    margin: 30px 0 0 0;
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: 0 0 0;
+}
+
+.style-pay-button button{
+    border: 2px solid #e9e9e9;
+    border-radius: 25px !important;
+    padding: 25px 50px 25px 15px;
+    margin: 0 0 20px 0;
+}
+.accordion-button-pay:not(.collapsed)::after {
+    content: "\f192";
+    color: #fcba00;
+    right: 15px;
+    position: absolute;
+    font-size: 24px;
+    top: 24px;
+}
+
+.confirm-pay{
+    margin: 0 0 30px 0;
+    display: block;
+    background: #fcba00;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.confirm-pay:hover{
+    background: #d39e09;
+}
+
+.accordion-button-pay::after {
+    content: "\f111";
+    color: #fcba00;
+    right: 15px;
+    position: absolute;
+    font-size: 24px;
+    top: 24px;
+}
+
+.logo-visa{
+    left: 15px;
+    height: 15px;
+}
+.logo-mc{
+    left: 70px;
+    height: 15px;
+}
+
+.accordion-button-pay:not(.collapsed) {
+    border: 2px solid #fcba00;
+}
+
+.desc--pay{
+    display: flex;
+    justify-content: space-between;
+}
+.desc--pay{}
+.desc--pay label{
+    font-weight: bold;
+}
+
+.block-decs-pay{
+    padding: 15px;
+    background: #f1f1f1;
+    margin: 0 0 30px 0;
+    border-radius: 15px;
+}
+
+
 @media screen and (max-width: 1024px) {
      header{
          background: #000;
