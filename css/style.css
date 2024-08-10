@@ -1423,3 +1423,156 @@ hr{
 
 }
 
+
+
+.form-wizard .form-wizard-header {
+    text-align: center;
+}
+
+.form-wizard .form-wizard-next-btn, .form-wizard .form-wizard-previous-btn, .form-wizard .form-wizard-submit {
+    background-color: #d65470;
+    color: #ffffff;
+    display: inline-block;
+    min-width: 150px;
+    padding: 15px;
+    text-align: center;
+    margin: 50px 0 0 0;
+    border-radius: 10px;
+}
+.form-wizard .wizard-fieldset {
+    display: none;
+}
+.form-wizard .wizard-fieldset.show {
+    display: block;
+}
+.form-wizard .form-wizard-steps {
+    margin: 30px 0;
+}
+.form-wizard .form-wizard-steps li {
+    width: 25%;
+    float: right;
+    position: relative;
+}
+.form-wizard .form-wizard-steps li::after {
+    background-color: #f3f3f3;
+    content: "";
+    height: 5px;
+    right: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+.form-wizard .form-wizard-steps li span {
+    background-color: #dddddd;
+    border-radius: 50%;
+    display: inline-block;
+    height: 75px;
+    line-height: 72px;
+    position: relative;
+    text-align: center;
+    width: 75px;
+    z-index: 1;
+    font-size: 34px;
+    color: #a9a9a9;
+}
+.form-wizard .form-wizard-steps li strong{
+    display: block;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 80px;
+}
+
+.form-wizard .form-wizard-steps li:last-child::after {
+    width: 50%;
+}
+.form-wizard .form-wizard-steps li.active span, .form-wizard .form-wizard-steps li.activated span {
+    background-color: #d65470;
+    color: #ffffff;
+}
+.form-wizard .form-wizard-steps li.active::after, .form-wizard .form-wizard-steps li.activated::after {
+    background-color: #d65470;
+    right: 50%;
+    width: 50%;
+    border-color: #d65470;
+}
+.form-wizard .form-wizard-steps li.activated::after {
+    width: 100%;
+    border-color: #d65470;
+}
+.form-wizard .form-wizard-steps li:last-child::after {
+    right: 0;
+}
+.form-wizard .wizard-password-eye {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/*Start  Styling Radio Button*/
+.radio-btn input{
+    opacity: 0;
+    width: 40px;
+    height: 28px;
+    margin: 0 -20px 0 -37px;
+    z-index: 99999;
+    position: relative;
+}
+
+.radio-btn label{
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #ccc
+}
+
+.radio-btn label:hover{
+    cursor: pointer
+}
+
+.radio-btn label:after{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #00d49b;
+    border-radius: 50%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.radio-btn input[type="radio"]:checked + label:after {
+    opacity: 1;
+    animation:centring .3s ease-in-out 1 forwards
+}
+
+.radio-btn input[type="radio"]:checked + label {
+    border-color:  #00d49b;
+
+}
+.radio-btn{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.select-time{
+    text-align: right;
+    direction: ltr;
+    height: 60px;
+    padding: 0 30px;
+}
