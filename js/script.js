@@ -6,36 +6,10 @@ $(window).scroll(function(){
     }
 });
 
-const swiperEl = document.querySelector('swiper-container')
-Object.assign(swiperEl, {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-        clickable: true,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-        },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-        },
-    },
-});
-swiperEl.initialize();
 
 
 "use strict"
+
 jQuery(document).ready(function() {
 
     var navListItems = $('ul.setup-panel li a'),
@@ -73,3 +47,130 @@ jQuery(document).ready(function() {
     })
 });
 
+$('.programs .owl-carousel').owlCarousel({
+    loop:true,
+    margin:50,
+    nav:false,
+    dots: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+$('.team_work .owl-carousel').owlCarousel({
+    loop:true,
+    margin:50,
+    nav:false,
+    dots: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+$('.client .owl-carousel').owlCarousel({
+    loop:true,
+    margin:50,
+    nav:false,
+    dots: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+jQuery(document).ready(function() {
+    // click on next button
+    jQuery('.form-wizard-next-btn').click(function() {
+        var parentFieldset = jQuery(this).parents('.wizard-fieldset');
+        var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+        var next = jQuery(this);
+        var nextWizardStep = true;
+        parentFieldset.find('.wizard-required').each(function(){
+            var thisValue = jQuery(this).val();
+
+            if( thisValue == "") {
+                jQuery(this).siblings(".wizard-form-error").slideDown();
+                nextWizardStep = false;
+            }
+            else {
+                jQuery(this).siblings(".wizard-form-error").slideUp();
+            }
+        });
+        if( nextWizardStep) {
+            next.parents('.wizard-fieldset').removeClass("show","400");
+            currentActiveStep.removeClass('active').addClass('activated').next().addClass('active',"400");
+            next.parents('.wizard-fieldset').next('.wizard-fieldset').addClass("show","400");
+            jQuery(document).find('.wizard-fieldset').each(function(){
+                if(jQuery(this).hasClass('show')){
+                    var formAtrr = jQuery(this).attr('data-tab-content');
+                    jQuery(document).find('.form-wizard-steps .form-wizard-step-item').each(function(){
+                        if(jQuery(this).attr('data-attr') == formAtrr){
+                            jQuery(this).addClass('active');
+                            var innerWidth = jQuery(this).innerWidth();
+                            var position = jQuery(this).position();
+                            jQuery(document).find('.form-wizard-step-move').css({"left": position.left, "width": innerWidth});
+                        }else{
+                            jQuery(this).removeClass('active');
+                        }
+                    });
+                }
+            });
+        }
+    });
+    //click on previous button
+    jQuery('.form-wizard-previous-btn').click(function() {
+        var counter = parseInt(jQuery(".wizard-counter").text());;
+        var prev =jQuery(this);
+        var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+        prev.parents('.wizard-fieldset').removeClass("show","400");
+        prev.parents('.wizard-fieldset').prev('.wizard-fieldset').addClass("show","400");
+        currentActiveStep.removeClass('active').prev().removeClass('activated').addClass('active',"400");
+        jQuery(document).find('.wizard-fieldset').each(function(){
+            if(jQuery(this).hasClass('show')){
+                var formAtrr = jQuery(this).attr('data-tab-content');
+                jQuery(document).find('.form-wizard-steps .form-wizard-step-item').each(function(){
+                    if(jQuery(this).attr('data-attr') == formAtrr){
+                        jQuery(this).addClass('active');
+                        var innerWidth = jQuery(this).innerWidth();
+                        var position = jQuery(this).position();
+                        jQuery(document).find('.form-wizard-step-move').css({"left": position.left, "width": innerWidth});
+                    }else{
+                        jQuery(this).removeClass('active');
+                    }
+                });
+            }
+        });
+    });
+
+});
+
+
+$(document).ready(function() {
+    $('#overlay').modal('show');
+
+    setTimeout(function() {
+        $('#overlay').modal('hide');
+    }, 5000);
+});

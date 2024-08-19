@@ -12,6 +12,8 @@
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
@@ -22,7 +24,8 @@
     <div class="position-mobile-relative header-sticky position-absolute start-0 end-0 z-3">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="login--botton navbar-brand border text-white border-white fs-6 px-2" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
+                <a class="login--botton navbar-brand border text-white border-white fs-6 px-2 rounded-pill" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
+                <a class="login--botton navbar-brand border text-white border-white fs-6 px-3 rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalQuetion">  للاستفسار </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                 </button>
@@ -65,8 +68,11 @@
                         </li>
                     </ul>
                     <div class="d-flex d-none d-md-block">
-                        <div class="logo">
-                            <img src="images/logo.png" alt="" title="" width="auto" height="auto">
+                        <div class="logo logo-white">
+                            <img src="images/logo-white.png" alt="" title="" width="auto" height="auto">
+                        </div>
+                        <div class="logo logo-dark">
+                            <img src="images/logo-dark.png" alt="" title="" width="auto" height="auto">
                         </div>
                     </div>
                 </div>
@@ -116,7 +122,7 @@
             <div class="col-md-4 col-12 mt-5">
                 <div class="box-muscle text-center shadow-lg rounded-5 py-4 px-3">
                     <img src="images/bone2.png" alt="" title="" width="100" height="100">
-                    <h3 class="fs-5 mt-3">تقييم عضلات ومفاصل الكور</h3>
+                    <h3 class="fs-5 mt-3">أستشارة</h3>
                     <p class="text-secondary">نقوم بتصميم برنامجك التدريبي وفقا لنتائج التقيمات السابقة مع متابعة تنفيذ البرنامج التدريبي</p>
                     <label class="nu_block"> 1 </label>
                 </div>
@@ -124,7 +130,7 @@
             <div class="col-md-4 col-12 mt-5">
                 <div class="box-muscle text-center shadow-lg rounded-5 py-4 px-3">
                     <img src="images/core-m2.png" alt="" title="" width="100" height="100">
-                    <h3 class="fs-5 mt-3">تقييم عضلات الكور</h3>
+                    <h3 class="fs-5 mt-3">التقييم</h3>
                     <p class="text-secondary">نقوم بتصميم برنامجك التدريبي وفقا لنتائج التقيمات السابقة مع متابعة تنفيذ البرنامج التدريبي</p>
                     <label class="nu_block"> 2 </label>
                 </div>
@@ -132,7 +138,7 @@
             <div class="col-md-4 col-12 mt-5">
                 <div class="box-muscle text-center shadow-lg rounded-5 py-4 px-3">
                     <img src="images/time2.png" alt="" title="" width="100" height="100">
-                    <h3 class="fs-5 mt-3">تصميم البرنامج التدريبي</h3>
+                    <h3 class="fs-5 mt-3">تصميم البرنامج</h3>
                     <p class="text-secondary">نقوم بتصميم برنامجك التدريبي وفقا لنتائج التقيمات السابقة مع متابعة تنفيذ البرنامج التدريبي</p>
                     <label class="nu_block"> 3 </label>
                 </div>
@@ -143,47 +149,57 @@
     </div>
 </section>
 <section class="programs bg-light py-5 mt-5">
+
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-12">
                 <div class="text-center">
-                    <h3>برامجنا التدريبية</h3>
+                    <h3>أقسام التدريب</h3>
                     <p>فرصتك الآن لتغير حياتك إلى الأفضل من خلال اختيارك للبرنامج التدريبي المناسب</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-12 mt-5">
-                <div class="box-muscle box-main-program overflow-hidden position-relative text-center shadow-lg rounded-5">
-                    <img src="images/Frame30.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0">
-                    <div class="icon-play position-absolute start-0 end-0">
-                       <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i> </a>
+            <div class="owl-carousel owl-theme">
+                <div class="col-12 mt-5">
+                    <div class="box-muscle box-main-program overflow-hidden position-relative text-center rounded-5">
+                        <a href="#"><img src="images/Frame30.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0"></a>
                     </div>
+                    <h3 class="text-center fs-4 mt-3"> <a href="#" class="text-black">  تدريب الكور للمبتدئين </a> </h3>
                 </div>
-                <h3 class="text-center fs-4 mt-2">تدريب الكور للمبتدئين</h3>
-            </div>
-            <div class="col-md-4 col-12 mt-5">
-                <div class="box-muscle box-main-program overflow-hidden position-relative text-center shadow-lg rounded-5">
-                    <img src="images/muscular.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0">
-                    <div class="icon-play position-absolute start-0 end-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i> </a>
+                <div class="col-12 mt-5">
+                    <div class="box-muscle box-main-program overflow-hidden position-relative text-center rounded-5">
+                        <a href="#"><img src="images/muscular.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0"></a>
                     </div>
+                    <h3 class="text-center fs-4 mt-3"> <a href="#" class="text-black">  الكور قبل وبعد عمليات السمنة</a> </h3>
                 </div>
-                <h3 class="text-center fs-4 mt-2">الكور قبل وبعد عمليات السمنة</h3>
-            </div>
-            <div class="col-md-4 col-12 mt-5">
-                <div class="box-muscle box-main-program overflow-hidden position-relative text-center shadow-lg rounded-5">
-                    <img src="images/8342581.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0">
-                    <div class="icon-play position-absolute start-0 end-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i> </a>
+                <div class="col-12 mt-5">
+                    <div class="box-muscle box-main-program overflow-hidden position-relative text-center rounded-5">
+                        <a href="#"><img src="images/8342581.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0"></a>
                     </div>
+                    <h3 class="text-center fs-4 mt-3"> <a href="#" class="text-black"> تدريب الكور للمحترفين </a></h3>
                 </div>
-                <h3 class="text-center fs-4 mt-2">تدريب الكور للمحترفين</h3>
+                <div class="col-12 mt-5">
+                    <div class="box-muscle box-main-program overflow-hidden position-relative text-center rounded-5">
+                        <a href="#"><img src="images/Frame30.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0"></a>
+                    </div>
+                    <h3 class="text-center fs-4 mt-3"> <a href="#" class="text-black">  تدريب الكور للمبتدئين </a> </h3>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="box-muscle box-main-program overflow-hidden position-relative text-center rounded-5">
+                        <a href="#"><img src="images/muscular.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0"></a>
+                    </div>
+                    <h3 class="text-center fs-4 mt-3"> <a href="#" class="text-black">  الكور قبل وبعد عمليات السمنة</a> </h3>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="box-muscle box-main-program overflow-hidden position-relative text-center rounded-5">
+                        <a href="#"><img src="images/8342581.png" alt="" title="" width="auto" height="auto" class="img-fluid w-100 img-block-program position-absolute start-0 end-0 top-0 bottom-0"></a>
+                    </div>
+                    <h3 class="text-center fs-4 mt-3"> <a href="#" class="text-black"> تدريب الكور للمحترفين </a></h3>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="text-center"> <a href="#" class="more-play fs-5"> شاهد المزيد </a> </div>
-        </div>
+
     </div>
 </section>
 <section class="banner--main position-relative" style="background-image: url('images/banner.png')">
@@ -212,80 +228,65 @@
                </div>
         </div>
         <div class="row">
-            <swiper-container class="mySwiper mySwiper_team" pagination="true" pagination-clickable="true" free-mode="true">
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-            </swiper-container>
+            <div class="owl-carousel owl-theme">
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -302,11 +303,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="box--desc--clients">
-
-                    <swiper-container class="mySwiper" pagination="true"  free-mode="true">
-                        <swiper-slide class="bg-transparent">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item-client">
                             <div class="position-absolute bg-block-client">
-                                <img src="images/slider.jpg">
+                                <img src="images/slider.jpg" class="rounded-4">
                                 <div class="client-box-img">
                                     <img src="images/testemonial-1.webp" class="thum--pro" alt="أفضل دورات التدريب الرياضي المعتمدة">
                                     <label class="name--pro"> برنامج تدريب الكور للمبتدئين </label>
@@ -328,10 +328,10 @@
 
 
                             </div>
-                        </swiper-slide>
-                        <swiper-slide class="bg-transparent">
+                        </div>
+                        <div class="item-client">
                             <div class="position-absolute bg-block-client">
-                                <img src="images/slider.jpg">
+                                <img src="images/slider.jpg" class="rounded-4">
                                 <div class="client-box-img">
                                     <img src="images/testemonial-1.webp" class="thum--pro" alt="أفضل دورات التدريب الرياضي المعتمدة">
                                     <label class="name--pro"> برنامج تدريب الكور للمبتدئين </label>
@@ -353,10 +353,10 @@
 
 
                             </div>
-                        </swiper-slide>
-                        <swiper-slide class="bg-transparent">
+                        </div>
+                        <div class="item-client">
                             <div class="position-absolute bg-block-client">
-                                <img src="images/slider.jpg">
+                                <img src="images/slider.jpg" class="rounded-4">
                                 <div class="client-box-img">
                                     <img src="images/testemonial-1.webp" class="thum--pro" alt="أفضل دورات التدريب الرياضي المعتمدة">
                                     <label class="name--pro"> برنامج تدريب الكور للمبتدئين </label>
@@ -378,8 +378,33 @@
 
 
                             </div>
-                        </swiper-slide>
-                    </swiper-container>
+                        </div>
+                        <div class="item-client">
+                            <div class="position-absolute bg-block-client">
+                                <img src="images/slider.jpg" class="rounded-4">
+                                <div class="client-box-img">
+                                    <img src="images/testemonial-1.webp" class="thum--pro" alt="أفضل دورات التدريب الرياضي المعتمدة">
+                                    <label class="name--pro"> برنامج تدريب الكور للمبتدئين </label>
+                                </div>
+                            </div>
+                            <div class="client-box text-start position-relative">
+                                <label class="icon-qu">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2rem" viewBox="0 0 40.31 32"><g id="quote" transform="translate(0)"><g id="Group_10098" data-name="Group 10098" transform="translate(0 0)"><path id="Path_12882" data-name="Path 12882" d="M6.509,17.5a10.152,10.152,0,0,0,2.805.41,8.815,8.815,0,0,0,3.517-.721c-.884,3.237-3.008,8.823-7.24,9.452a1,1,0,0,0-.82.723l-.925,3.308a1.005,1.005,0,0,0,.831,1.266A7.024,7.024,0,0,0,5.625,32c5.079,0,10.109-5.3,12.231-12.892C19.1,14.654,19.467,7.958,16.4,3.744A9.162,9.162,0,0,0,8.951,0H8.912a8.915,8.915,0,0,0-2.4,17.5Z" transform="translate(21.539 0)" fill="#be1622"></path><path id="Path_12883" data-name="Path 12883" d="M1.15,13.288A8.935,8.935,0,0,0,6.509,17.5a10.151,10.151,0,0,0,2.8.41,8.817,8.817,0,0,0,3.518-.721c-.884,3.237-3.008,8.823-7.24,9.452a1.006,1.006,0,0,0-.82.723L3.847,30.67a1.005,1.005,0,0,0,.831,1.266A7.015,7.015,0,0,0,5.625,32c5.079,0,10.109-5.3,12.232-12.892C19.1,14.654,19.467,7.959,16.4,3.744A9.161,9.161,0,0,0,8.951,0h-.04A8.915,8.915,0,0,0,1.15,13.288Z" transform="translate(0 0)" fill="#be1622"></path></g></g></svg>
+                                </label>
+                                <p>
+                                    الحمد لله تحسن عندي الثبات والتوازن وكان عندي الم بالكتف تحسن جدا والتمارين اشتغلت على العضلات الداخلية بشكل ممتاز
+                                    <a href="#">المزيد</a>
+                                </p>
+                                <br>
+                                <div class="audio_client">
+                                    <h4>  تهاني <small class="fs-6"> المملكة العربية السعودية </small></h4>
+                                </div>
+                                <div style="clear:both"></div>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -391,7 +416,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
-                    <h3 class="fs-2">سؤال وجواب عن التدريب الشخصي</h3>
+                    <h3 class="fs-2">الاشئلة الشائعة</h3>
                     <p class="fs-5">لدينا نخبة من المتخصصين الحاصلين على شهادات عالمية معتمدة وسنوات خبرة طويلة</p>
                 </div>
             </div>
@@ -534,6 +559,13 @@
     </div>
 </footer>
 
+
+<div class="bt-support-now theme-btn"><i class="fa-solid fa-headphones-simple"></i>
+    <span> <a href="#" class="text-white"> <small class="fa-solid fa-envelope-open-text"></small>  </a> </span>
+    <span> <a href="#" class="text-white"> <small class="fa-brands fa-whatsapp"></small>  </a> </span>
+    <span> <a href="#" class="text-white"> <small class="fa-solid fa-phone"></small>  </a> </span>
+</div>
+
 <!-- Modal Video -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -556,16 +588,73 @@
     </div>
 </div>
 
+<!-- Modal Banner -->
+<div class="modal fade" id="exampleModalQuetion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header rtl">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">أرسل استفسارك</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row rtl">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label"><i class="fa-solid fa-user"></i>  الاسم بالكامل * </label>
+                                <input type="text" class="form-control input-main" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label"><i class="fa-regular fa-envelope"></i>  البريد الالكتروني * </label>
+                                <input type="email" class="form-control input-main" placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label"><i class="fa-solid fa-headphones"></i>  رقم الجوال * </label>
+                                <input type="tel" class="form-control input-main" placeholder="000 0000 00000">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label class="form-label"><i class="fa-solid fa-headphones"></i>  أكتب استفسارك * </label>
+                                <textarea rows="4" class="form-control input-main h-auto"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mt-0 btn-main"> أرســـال </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Banner -->
+<div class="modal fade" id="overlay">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="#">
+                    <img class="w-100" src="images/fitness-gym.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <body>
 
 
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/swiper-element-bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-
 
 
 

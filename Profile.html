@@ -12,6 +12,8 @@
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
@@ -106,6 +108,8 @@
                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-user-pen"></i>  تعديل البيانات الشخصية</button>
                         <button class="nav-link" id="nav-password-tab" data-bs-toggle="tab" data-bs-target="#nav-password" type="button" role="tab" aria-controls="nav-password" aria-selected="false"><i class="fa-solid fa-lock"></i>  تغير كلمة السر</button>
                         <button class="nav-link" id="nav-program-tab" data-bs-toggle="tab" data-bs-target="#nav-program" type="button" role="tab" aria-controls="nav-program" aria-selected="false"><i class="fa-solid fa-dumbbell"></i>  برامجي التدريبية </button>
+                        <button class="nav-link" id="nav-fitness-tab" data-bs-toggle="tab" data-bs-target="#nav-fitness" type="button" role="tab" aria-controls="nav-fitness" aria-selected="false"><i class="fa-solid fa-person-running"></i> لياقتي </button>
+                        <button class="nav-link" id="nav-report-fitness-tab" data-bs-toggle="tab" data-bs-target="#nav-report-fitness" type="button" role="tab" aria-controls="nav-report-fitness" aria-selected="false"><i class="fa-solid fa-person-running"></i> ارشيف لياقتى </button>
                         <button class="nav-link"> <i class="fa-solid fa-arrow-right-from-bracket"></i>  تسجيل الخروج  </button>
 
                     </div>
@@ -256,34 +260,223 @@
                     </div>
                     <div class="tab-pane fade" id="nav-program" role="tabpanel" aria-labelledby="nav-program-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-md-6 col-lg-6 col-12">
-                                    <div class="blockOneProgram m-0">
-                                        <h3><a href="#"> برنامج تدريب الكور للمبتدئين </a> </h3>
-                                        <p>برنامج 4 اسابيع لتمرينة الصدر مع التراي و الضهر مع الباي والاكتاف مع البطن</p>
-                                        <label><i class="fa-solid fa-tag"></i>  1500 ريال <small class="text-info text-decoration-line-through"> 2100 ريال </small> </label>
-                                        <div class="d-flex justify-content-between">
-                                            <span> <i class="fa-regular fa-clock"></i>  360 دقيقة </span>
-                                            <span> <i class="fa-regular fa-calendar-days"></i>  35 يوم </span>
+                                <div class="col-md-6 col-lg-4 col-12">
+                                    <div class="blockOneProgram mt-0">
+                                        <div class="img_prog">
+                                            <img src="images/8342581.png">
                                         </div>
-                                        <a href="#" class="btn-main rounded-pill mt-0"> تفاصيل البرنامج </a>
+                                        <div class="p-3">
+                                            <h3><a href="#"> برنامج تدريب الكور للمبتدئين </a> </h3>
+                                            <label class="mb-3"><i class="fa-solid fa-tag"></i>  1500 ريال <small class="text-info text-decoration-line-through"> 2100 ريال </small> </label>
+                                            <div class="d-flex gap-1">
+                                                <a href="#" class="btn-main mt-0"> تفاصيل البرنامج <i class="fa-regular fa-bookmark"></i>   </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-lg-6 col-12">
-                                    <div class="blockOneProgram m-0">
-                                        <h3><a href="#"> برنامج تدريب الكور للمبتدئين </a> </h3>
-                                        <p>برنامج 4 اسابيع لتمرينة الصدر مع التراي و الضهر مع الباي والاكتاف مع البطن</p>
-                                        <label><i class="fa-solid fa-tag"></i>  1500 ريال <small class="text-info text-decoration-line-through"> 2100 ريال </small> </label>
-                                        <div class="d-flex justify-content-between">
-                                            <span> <i class="fa-regular fa-clock"></i>  360 دقيقة </span>
-                                            <span> <i class="fa-regular fa-calendar-days"></i>  35 يوم </span>
+                                <div class="col-md-6 col-lg-4 col-12">
+                                    <div class="blockOneProgram mt-0">
+                                        <div class="img_prog">
+                                            <img src="images/8342581.png">
                                         </div>
-                                        <a href="#" class="btn-main rounded-pill mt-0"> تفاصيل البرنامج </a>
+                                        <div class="p-3">
+                                            <h3><a href="#"> برنامج تدريب الكور للمبتدئين </a> </h3>
+                                            <label class="mb-3"><i class="fa-solid fa-tag"></i>  1500 ريال <small class="text-info text-decoration-line-through"> 2100 ريال </small> </label>
+                                            <div class="d-flex gap-1">
+                                                <a href="#" class="btn-main mt-0"> تفاصيل البرنامج <i class="fa-regular fa-bookmark"></i>   </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 col-12">
+                                    <div class="blockOneProgram mt-0">
+                                        <div class="img_prog">
+                                            <img src="images/8342581.png">
+                                        </div>
+                                        <div class="p-3">
+                                            <h3><a href="#"> برنامج تدريب الكور للمبتدئين </a> </h3>
+                                            <label class="mb-3"><i class="fa-solid fa-tag"></i>  1500 ريال <small class="text-info text-decoration-line-through"> 2100 ريال </small> </label>
+                                            <div class="d-flex gap-1">
+                                                <a href="#" class="btn-main mt-0"> تفاصيل البرنامج <i class="fa-regular fa-bookmark"></i>   </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                     </div>
-                    <div class="tab-pane fade" id="nav-note" role="tabpanel" aria-labelledby="nav-note-tab" tabindex="0">...fdv</div>
+                    <div class="tab-pane fade" id="nav-fitness" role="tabpanel" aria-labelledby="nav-fitness-tab" tabindex="0">
+                        <div class="box_tabs_style">
+                            <div class="profile-edit">
+                                <h2 class="heading-md mt-0"> لياقتي </h2>
+                                <p> يمكنك مشاهدة وتعديل بياناتك الشخصية وحفظ بيانات نسبة العضل والدهون بجسمك وتعهديلها </p>
 
+                                <div class="block-profile-info">
+                                    <dt><strong> الطول : </strong></dt>
+                                    <dd> 176 سم </dd>
+                                </div>
+                                <div class="block-profile-info">
+                                    <dt><strong> الوزن : </strong></dt>
+                                    <dd>75 كم</dd>
+                                </div>
+                                <div class="block-profile-info">
+                                    <dt><strong> 	وزن العضلات SMM   : </strong></dt>
+                                    <dd>36 كم</dd>
+                                </div>
+                                <div class="block-profile-info">
+                                    <dt><strong> 	نسبة الدهون PBF : </strong></dt>
+                                    <dd> 12 كم </dd>
+                                </div>
+                                <div class="block-profile-info">
+                                    <dt><strong> محيط الخصر : </strong></dt>
+                                    <dd> 40 سم </dd>
+                                </div>
+                                <div class="block-profile-info">
+                                    <dt><strong> محيط الهيب : </strong></dt>
+                                    <dd> 34 سم </dd>
+                                </div>
+                                <div class="block-profile-info">
+                                    <dt><strong> inbody : </strong></dt>
+                                    <dd class="img-inbody"> <img src="images/inbody.jpg" alt="test" data-bs-toggle="modal" data-bs-target="#exampleModalInbody"> </dd>
+                                </div>
+                                <button type="submit" class="btn-edit-profile btn-main" data-bs-toggle="modal" data-bs-target="#exampleModalEditInbody"> <i class="fa fa-edit" aria-hidden="true"></i> تحديث البيانات </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-report-fitness" role="tabpanel" aria-labelledby="nav-report-fitness-tab" tabindex="0">
+                        <div class="section-fqa rtl">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-5 text-black bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            لياقتى في شهر ديسمبر
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-light-emphasis">
+                                            <div class="profile-edit">
+
+                                                <div class="block-profile-info">
+                                                    <dt><strong> الطول : </strong></dt>
+                                                    <dd> 176 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> الوزن : </strong></dt>
+                                                    <dd>75 كم</dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> 	وزن العضلات SMM   : </strong></dt>
+                                                    <dd>36 كم</dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> 	نسبة الدهون PBF : </strong></dt>
+                                                    <dd> 12 كم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> محيط الخصر : </strong></dt>
+                                                    <dd> 40 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> محيط الهيب : </strong></dt>
+                                                    <dd> 34 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> inbody : </strong></dt>
+                                                    <dd class="img-inbody"> <img src="images/inbody.jpg" alt="test" data-bs-toggle="modal" data-bs-target="#exampleModalInbody"> </dd>
+                                                </div>
+                                                <button type="submit" class="btn-edit-profile btn-main" data-bs-toggle="modal" data-bs-target="#exampleModalEditInbody"> <i class="fa fa-edit" aria-hidden="true"></i> تحديث البيانات </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button text-black fs-5 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            لياقتى في شهر يناير
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-light-emphasis">
+                                            <div class="profile-edit">
+
+                                                <div class="block-profile-info">
+                                                    <dt><strong> الطول : </strong></dt>
+                                                    <dd> 176 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> الوزن : </strong></dt>
+                                                    <dd>75 كم</dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> 	وزن العضلات SMM   : </strong></dt>
+                                                    <dd>36 كم</dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> 	نسبة الدهون PBF : </strong></dt>
+                                                    <dd> 12 كم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> محيط الخصر : </strong></dt>
+                                                    <dd> 40 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> محيط الهيب : </strong></dt>
+                                                    <dd> 34 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> inbody : </strong></dt>
+                                                    <dd class="img-inbody"> <img src="images/inbody.jpg" alt="test" data-bs-toggle="modal" data-bs-target="#exampleModalInbody"> </dd>
+                                                </div>
+                                                <button type="submit" class="btn-edit-profile btn-main" data-bs-toggle="modal" data-bs-target="#exampleModalEditInbody"> <i class="fa fa-edit" aria-hidden="true"></i> تحديث البيانات </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button text-black fs-5 bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            لياقتى في شهر فبراير
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body text-light-emphasis">
+                                            <div class="profile-edit">
+
+                                                <div class="block-profile-info">
+                                                    <dt><strong> الطول : </strong></dt>
+                                                    <dd> 176 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> الوزن : </strong></dt>
+                                                    <dd>75 كم</dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> 	وزن العضلات SMM   : </strong></dt>
+                                                    <dd>36 كم</dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> 	نسبة الدهون PBF : </strong></dt>
+                                                    <dd> 12 كم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> محيط الخصر : </strong></dt>
+                                                    <dd> 40 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> محيط الهيب : </strong></dt>
+                                                    <dd> 34 سم </dd>
+                                                </div>
+                                                <div class="block-profile-info">
+                                                    <dt><strong> inbody : </strong></dt>
+                                                    <dd class="img-inbody"> <img src="images/inbody.jpg" alt="test" data-bs-toggle="modal" data-bs-target="#exampleModalInbody"> </dd>
+                                                </div>
+                                                <button type="submit" class="btn-edit-profile btn-main" data-bs-toggle="modal" data-bs-target="#exampleModalEditInbody"> <i class="fa fa-edit" aria-hidden="true"></i> تحديث البيانات </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -404,13 +597,69 @@
     </div>
 </div>
 
+<!-- Modal Inbody -->
+<div class="modal fade" id="exampleModalInbody" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/inbody.jpg" class="w-100">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Edit Inbody -->
+<div class="modal fade" id="exampleModalEditInbody" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form class="rtl">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12 mb-3">
+                            <label class="mb-2"> الطول </label>
+                            <input class="form-control input-main" type="text" id="" placeholder="176" name="Name" value="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 mb-3">
+                            <label class="mb-2"> الوزن <span class="color-red">*</span></label>
+                            <input class="form-control input-main" type="text" data-val="true" id="" placeholder="75 كم" name="" value="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 mb-3">
+                            <label class="mb-2"> وزن العضلات <span class="color-red">*</span></label>
+                            <input class="form-control input-main" type="text" data-val="true" id="" placeholder="36 كم" name="" value="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 mb-3">
+                            <label class="mb-2"> نسبة الدهون <span class="color-red">*</span></label>
+                            <input class="form-control input-main" type="text" data-val="true" id="" placeholder="36 كم" name="" value="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 mb-3">
+                            <label class="mb-2"> محيط الخصر <span class="color-red">*</span></label>
+                            <input class="form-control input-main" type="text" data-val="true" id="" placeholder="36 كم" name="" value="">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 mb-3">
+                            <label class="mb-2"> محيط الهيب <span class="color-red">*</span></label>
+                            <input class="form-control input-main" type="text" data-val="true" id="" placeholder="36 كم" name="" value="">
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 mb-3">
+                            <label class="mb-2"> ارفاق صورة Inbody <span class="color-red">*</span></label>
+                            <input class="form-control" type="file" data-val="true" id="" placeholder="36 كم" name="" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn-edit-profile btn-main"> <i class="fa fa-save" aria-hidden="true"></i> حفظ </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <body>
 
 
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/swiper-element-bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
 
