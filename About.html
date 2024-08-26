@@ -20,11 +20,12 @@
 
 </head>
 
-<header class="in--page">
-    <div class="position-mobile-relative header-sticky start-0 end-0 z-3">
+<header>
+    <div class="position-mobile-relative header-sticky position-absolute start-0 end-0 z-3">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="login--botton navbar-brand border text-white border-white fs-6 px-2" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
+                <a class="login--botton navbar-brand border text-white border-white fs-6 px-2 rounded-pill" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
+                <a class="login--botton navbar-brand border text-white border-white fs-6 px-3 rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalQuetion">  للاستفسار </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                 </button>
@@ -34,8 +35,14 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">من نحن</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                عن الموقع
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> من نحن </a></li>
+                                <li><a class="dropdown-item" href="#"> ما هو الكور </a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,8 +74,11 @@
                         </li>
                     </ul>
                     <div class="d-flex d-none d-md-block">
-                        <div class="logo">
-                            <img src="images/logo.png" alt="" title="" width="auto" height="auto">
+                        <div class="logo logo-white">
+                            <img src="images/logo-white.png" alt="" title="" width="auto" height="auto">
+                        </div>
+                        <div class="logo logo-dark">
+                            <img src="images/logo-dark.png" alt="" title="" width="auto" height="auto">
                         </div>
                     </div>
                 </div>
@@ -76,7 +86,6 @@
         </nav>
     </div>
 </header>
-
 
 <section class="breadcrumb-page" style="background-image: url('images/5.jpg')">
     <div class="container">
@@ -157,88 +166,73 @@
 <section class="team_work py-5">
     <div class="container">
         <div class="row">
-               <div class="col-md-12">
-                   <div class="text-center">
-                       <h3 class="fs-2"> فريق العمل </h3>
-                       <p class="fs-5">لدينا نخبة من المتخصصين الحاصلين على شهادات عالمية معتمدة وسنوات خبرة طويلة</p>
-                   </div>
-               </div>
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h3 class="fs-2"> فريق العمل </h3>
+                    <p class="fs-5">لدينا نخبة من المتخصصين الحاصلين على شهادات عالمية معتمدة وسنوات خبرة طويلة</p>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <swiper-container class="mySwiper mySwiper_team" pagination="true" pagination-clickable="true" free-mode="true">
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
-                        <a href="#" class="text-black">
-                            <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
-                            <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
-                            <small>مؤسس core1fit</small>
-                        </a>
-                    </div>
-                </swiper-slide>
-            </swiper-container>
+            <div class="owl-carousel owl-theme">
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+                <div class="box-muscle box-teamwork text-center border rounded-5 py-4 px-0">
+                    <a href="#" class="text-black">
+                        <img src="images/ehab-11.png" alt="" title="" width="auto" height="auto">
+                        <h3 class="fs-5 mt-3 mb-0"> د / ايهــــاب ابو العلا </h3>
+                        <small>مؤسس core1fit</small>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
