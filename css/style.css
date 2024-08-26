@@ -1153,7 +1153,7 @@ hr{
 
 .calendar-container header {
     border-radius: 1em 1em 0 0;
-    background: #e66b6b;
+    background: #082148;
     color: #fff;
     padding: 2em 2em;
 }
@@ -1739,7 +1739,7 @@ hr{
 
 .tag:hover ,
 .tag.active{
-    background-color: #e66b6b;
+    background-color: #082148;
     color: white;
 }
 
@@ -1831,7 +1831,28 @@ hr{
     box-shadow: 0 0 0;
 }
 
-.block-gold-plan , .block-plan-other{
+.block-gold-plan{
+    border: 2px solid #fcba00;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    direction: rtl;
+}
+
+.block-gold-plan:before{
+    content: "الباقة الذهبية";
+    position: absolute;
+    background: #fcba00;
+    color: #fff;
+    padding: 10px 20px;
+    transform: rotate(45deg);
+    top: 33px;
+    width: 200px;
+    right: -45px;
+    text-align: center;
+}
+
+.block-plan-other{
     box-shadow: 0 0 10px #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -1925,4 +1946,109 @@ hr{
     width: 25%;
     border-radius: 10px;
     height: 150px;
+}
+
+.content-blog{
+    overflow: hidden;
+}
+
+.content-blog img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.content-blog label{
+    color: #9b9191;
+    margin: 10px 0 10px 0;
+}
+
+.cont-related-blog ul{
+    padding: 0;
+    overflow: hidden;
+}
+.cont-related-blog ul li{
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+.cont-related-blog ul li img{
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+}
+.cont-related-blog ul li h4{
+    line-height: 17px;
+}
+.cont-related-blog ul li h4 a{
+    font-size: 14px;
+    color: #000;
+}
+.cont-related-blog ul li h4 a:hover{
+    text-decoration: underline;
+}
+
+.bg_video {
+    background: url(../images/slider.jpg);
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+
+    position: relative;
+    overflow: hidden;
+    padding: 75px 0 100px 0 !important;
+    direction: ltr;
+}
+.cta-area::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d233e;
+    opacity: 0.6;
+}
+.cta-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    fill: #fff;
+    stroke: none;
+}
+.service-free {
+    background: rgb(18 20 187 / 58%);
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 25px;
+    font-size: 24px;
+}
+.section-heading .sec__title {
+    font-size: 40px;
+    color: #0d233e;
+    font-weight: 700;
+}
+.block_img_client_small {
+    width: 85px;
+    height: 85px;
+    margin: 0;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+.section-heading{
+    position: relative;
 }
