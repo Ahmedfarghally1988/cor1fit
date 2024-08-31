@@ -20,6 +20,8 @@
 
 </head>
 
+<body>
+
 <header>
     <div class="position-mobile-relative header-sticky position-absolute start-0 end-0 z-3">
         <nav class="navbar navbar-expand-lg">
@@ -29,7 +31,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                 </button>
-                <div class="px-3 fs-5 btn-dark"> <a href="#" class="icon--moon text-white"> <i class="fa-solid fa-moon"></i> </a> </div>
+                <div class="px-3 fs-5 btn-dark"> <button id="darkMode" class="icon--moon text-white border-0 bg-transparent"> <i class="fa-solid fa-moon"></i> </button> </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto rtl mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -154,7 +156,7 @@
 
     </div>
 </section>
-<section class="programs bg-light py-5 mt-5">
+<section class="programs bg-light py-3 mt-5">
 
     <div class="container">
         <div class="row">
@@ -417,7 +419,7 @@
     </div>
 </section>
 
-<section class="py-5">
+<section class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -575,15 +577,23 @@
 </div>
 
 
+
 <div class="bt-support-now theme-btn theme-btn-cart"><i class="fa-solid fa-cart-shopping"></i>
     <span> <a href="#" class="text-white"> Pay Now  </a> </span>
     <label>2</label>
 </div>
 
+<div class="bt-support-now theme-btn theme-btn-social"> <i class="fa-solid fa-share-nodes"></i>
+    <span> <a href="#" class="text-white"> <small class="fa-brands fa-facebook"></small>  </a> </span>
+    <span> <a href="#" class="text-white"> <small class="fa-brands fa-instagram"></small>  </a> </span>
+    <span> <a href="#" class="text-white"> <small class="fa-brands fa-x-twitter"></small>  </a> </span>
+</div>
+
+
 <!-- Modal Video -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content modal-lg">
             <div class="modal-body p-0">
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/7kVWBrNHMHg?si=c9E05IfX6oFqV4iT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -593,7 +603,7 @@
 
 <!-- Modal Banner -->
 <div class="modal fade" id="exampleModalBanner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body p-0">
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/7kVWBrNHMHg?si=c9E05IfX6oFqV4iT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -604,7 +614,7 @@
 
 <!-- Modal Banner -->
 <div class="modal fade" id="exampleModalQuetion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header rtl">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">أرسل استفسارك</h1>
@@ -661,7 +671,8 @@
     </div>
 </div>
 
-<body>
+
+
 
 
 
@@ -669,8 +680,6 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-
-
 
 
 

@@ -130,6 +130,14 @@ a{
     border-radius: 50px;
 }
 
+.more-play:hover{
+    color: #fff;
+}
+
+.more-play.more-play-blog:hover{
+    color: #000;
+}
+
 .accordion-button::after{
     transform: none;
     font-family: 'Font Awesome 6 Free';
@@ -146,7 +154,7 @@ a{
 }
 
 .more-play:hover{
-    color: #000;
+    color: #fff;
     background: transparent;
 }
 
@@ -341,11 +349,14 @@ swiper-slide img {
 .bg-block-client{
     right: 0;
     width: 35%;
-    height: 330px;
+    height: 305px;
     top: 0;
     bottom: 0;
     border-radius: 10px;
     overflow: hidden;
+}
+.bg-block-client img{
+    height: 100%;
 }
 
 .logo img{
@@ -416,7 +427,7 @@ swiper-slide img {
 }
 
 .about--home{
-    margin: 100px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .accordion-button:focus {
@@ -451,11 +462,16 @@ swiper-slide img {
 
 }
 
+.breadcrumb-item.active {
+    color: #fff;
+}
+
 .tit-in-page{
     text-align: center;
     font-weight: bold;
-    margin: 40px 0 15px 0;
+    margin: 70px 0 15px 0;
     font-size: 36px;
+    color: #fff;
 }
 
 .breadcrumb-page{
@@ -472,7 +488,7 @@ swiper-slide img {
     content: "";
     height: 100%;
     width: 100%;
-    background: rgb(255 255 255 / 89%);
+    background: rgb(0 0 0 / 70%);
 }
 .des-about-page {
     margin: 30px 0 50px 0;
@@ -521,16 +537,18 @@ swiper-slide img {
 }
 
 .spcial-team{
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 20%;
-    font-size: 20px;
+    display: block;
+    position: fixed;
+    right: 0;
+    left: auto;
+    font-size: 24px;
+    width: auto;
+    z-index: 9999999;
 
 }
 .spcial-team a{
     display: block;
-    color: #000;
+    color: #082148;
     margin: 0 0 10px 0;
 }
 .spcial-team a:hover {
@@ -556,7 +574,7 @@ hr{
 }
 
 .tit-bin-form{
-    background: #fcba00;
+    background: #082148;
     padding: 15px;
     font-size: 17px;
     color: #fff;
@@ -633,6 +651,11 @@ hr{
     box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
     border-radius: 20px 20px 10px 10px;
     margin: 1em;
+}
+
+
+.accordion-header button{
+    font-size: 17px !important;
 }
 
 @media screen and (min-width: 66.25em) {
@@ -1075,8 +1098,37 @@ hr{
     border-radius: 10px;
     box-shadow: 0 0 10px #ddd;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
+.price-mobile{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px #c1b6b6;
+    z-index: 99999;
+}
+
+.price-mobile label{
+    font-weight: bold;
+    color: #000;
+    direction: rtl;
+}
+.price-mobile label small{
+    font-size: 12px;
+    color: #b7b3b3;
+}
+.price-mobile a{
+    background: #082148;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+}
 .sidebar-profile button.active,
 .sidebar-profile button:hover{
     background: #eee !important;
@@ -1697,7 +1749,12 @@ hr{
     font-size: 100px;
 }
 .theme-btn.theme-btn-cart.bt-support-now{
+    bottom: 140px;
+}
+
+.theme-btn.theme-btn-social.bt-support-now{
     bottom: 80px;
+    background: #006cb9;
 }
 
 .theme-btn.theme-btn-cart.bt-support-now label{
@@ -1973,6 +2030,18 @@ hr{
 }
 
 @media screen and (max-width: 1024px) {
+    .theme-btn.bt-support-now {
+        bottom: 60px;
+    }
+    .theme-btn.theme-btn-social.bt-support-now {
+        bottom: 120px;
+    }
+    .theme-btn.theme-btn-cart.bt-support-now {
+        bottom: 180px;
+    }
+    .cs_iconbox.cs_style_5 {
+        margin-top: 50px;
+    }
     header{
         background: #000;
     }
@@ -2079,3 +2148,65 @@ hr{
 @media screen and (min-device-width: 1401px) and (max-device-width: 2000px) {
 
 }
+
+
+
+/************* dark Mode ************/
+
+body.dark-mode .fa-moon:before{content: "\f185";}
+body.dark-mode {background: #082148;}
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode div,
+body.dark-mode label,
+body.dark-mode span,
+body.dark-mode small{
+    color: #fff;
+}
+
+body.dark-mode .newClass { background: #082148 !important;box-shadow: 0 0 15px #ffffff;}
+body.dark-mode .newClass .navbar-nav .nav-item .nav-link {color: #ffffff;}
+body.dark-mode .newClass .icon--moon { color: #ffffff !important; }
+body.dark-mode .newClass .login--botton {color: #ffffff !important;border: 1px solid #ffffff !important;}
+body.dark-mode .newClass .logo.logo-dark {display: none;}
+body.dark-mode .newClass .logo.logo-white {display: block;}
+body.dark-mode .box-muscle {box-shadow: 0 0 20px rgb(255 255 255 / 11%) !important;}
+body.dark-mode .nu_block {color: rgb(255 255 255 / 5%) !important;}
+body.dark-mode .programs{background: #333 !important;}
+body.dark-mode .programs .text-black{color: #fff !important;}
+body.dark-mode .client {background: #333;}
+body.dark-mode .client-box {box-shadow: 0 0 0;background: #082148;}
+body.dark-mode .py-5.bg-light{background: #000 !important;}
+body.dark-mode .accordion-body p{color: #000}
+body.dark-mode .dropdown-menu{background: #000}
+body.dark-mode .info_footer {background: #000;}
+body.dark-mode .myMassage{background: #000;}
+body.dark-mode .btn-main {background: #fcba00;border: 1px solid #fcba00;}
+body.dark-mode .cs_post.cs_style_2 .cs_post_info p{color: #000}
+body.dark-mode .calendar-container header {background: #fcba00;}
+body.dark-mode .calendar td a{color: #000 !important;}
+body.dark-mode .tag{color: #000}
+body.dark-mode .tag:hover, .tag.active {background-color: #fcba00}
+body.dark-mode .cs_iconbox.cs_style_5 {background: #000;}
+body.dark-mode .blockOneProgram {box-shadow: 0 0 0;background: #000;}
+body.dark-mode .accordion-item{background: transparent;}
+body.dark-mode .style-pay-button button {color: #FFF !important;}
+body.dark-mode .desc--pay label {color: #000 !important;}
+body.dark-mode .section-fqa{background: #fff}
+body.dark-mode .cart-plan{background: #fcba00;}
+body.dark-mode .theme-btn.theme-btn-cart.bt-support-now {background: #000000;}
+body.dark-mode .sidebar-profile button {color: #ffffff;}
+body.dark-mode .sidebar-profile button:hover {color: #000;}
+body.dark-mode .text-light-emphasis .block-profile-info {color: #000;}
+body.dark-mode .btn-bookNow {background: #fcba00;}
+body.dark-mode .about--home .client-box{background: #000}
+body.dark-mode .cta-svg{fill: #082148}
+body.dark-mode .blockDayOne p {background: #000000;}
+body.dark-mode .cont-related-blog ul li h4 a {color: #ffffff;}
+body.dark-mode .text-secondary{color: #fff !important;}

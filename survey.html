@@ -29,7 +29,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                 </button>
-                <div class="px-3 fs-5 btn-dark"> <a href="#" class="icon--moon text-white"> <i class="fa-solid fa-moon"></i> </a> </div>
+                <div class="px-3 fs-5 btn-dark"> <button id="darkMode" class="icon--moon text-white border-0 bg-transparent"> <i class="fa-solid fa-moon"></i> </button> </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto rtl mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -109,8 +109,14 @@
 <section class="page-survey">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 m-auto col-12">
-                <div class="content-survey shadow-lg p-4 my-5 rtl rounded">
+            <div class="col-md-12 text-center mt-4">
+                <h3>نص تعريفي</h3>
+                <p>هي خدمة مدفوعه أقدمها عبر الأنترنت من خلالها سأكون مدربك الشخصي وأنشأ لك كافة برامجك الرياضية والغذائيه التي تناسب وضع جسمك وهدفك مع متابعة تطورات جسمك بلأضافة الى الأجابه على استفسارتك.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 m-auto col-12">
+                <div class="content-survey shadow-lg p-4 my-5 mt-0 rtl rounded">
                     <form>
                         <div class="row">
                             <div class="col-md-12">
@@ -129,6 +135,24 @@
                                 <div class="mb-3">
                                     <label class="form-label"><i class="fa-solid fa-headphones"></i>  رقم الجوال * </label>
                                     <input type="tel" class="form-control input-main"  placeholder="000 0000 00000" >
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <div class="form-check rtl">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        أنشاء حساب
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="password" class="form-control input-main" placeholder=" كلمة المرور ">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="password" class="form-control input-main" placeholder=" تأكيد كلمة المرور ">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -288,7 +312,7 @@
 </section>
 
 
-<section class="py-5">
+<section class="py-5 bg-light">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -449,6 +473,11 @@
     <label>2</label>
 </div>
 
+<div class="bt-support-now theme-btn theme-btn-social"> <i class="fa-solid fa-share-nodes"></i>
+    <span> <a href="#" class="text-white"> <small class="fa-brands fa-facebook"></small>  </a> </span>
+    <span> <a href="#" class="text-white"> <small class="fa-brands fa-instagram"></small>  </a> </span>
+    <span> <a href="#" class="text-white"> <small class="fa-brands fa-x-twitter"></small>  </a> </span>
+</div>
 
 <!-- Modal Video -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
