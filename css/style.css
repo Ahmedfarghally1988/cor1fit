@@ -422,7 +422,7 @@ swiper-slide img {
     width: 100%;
     left: 0;
     right: 0;
-    background: rgb(0 0 0 / 75%);
+    background-image: linear-gradient(#00000063, #ffffff00);
     border-radius: 0 0 100px 100px;
 }
 
@@ -656,6 +656,35 @@ hr{
 
 .accordion-header button{
     font-size: 17px !important;
+}
+
+footer{
+    position: relative;
+}
+
+footer:before{
+    position: absolute;
+    content: "";
+    background: url("../images/footer.png");
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-position: center;
+    opacity: 0.05;
+}
+
+footer .container{
+    position: relative;
+}
+
+.social-footer{
+
+}
+.social-footer a{
+    color: #000;
+    font-size: 27px;
+    margin: 0 0 0 10px;
 }
 
 @media screen and (min-width: 66.25em) {
@@ -2210,3 +2239,4 @@ body.dark-mode .cta-svg{fill: #082148}
 body.dark-mode .blockDayOne p {background: #000000;}
 body.dark-mode .cont-related-blog ul li h4 a {color: #ffffff;}
 body.dark-mode .text-secondary{color: #fff !important;}
+/*body.dark-mode .overlay-video {background: rgb(0 0 0 / 75%);}*/
