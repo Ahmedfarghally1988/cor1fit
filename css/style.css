@@ -2076,7 +2076,13 @@ footer .container{
     }
     .btn-dark{
         order: -1;
+        padding: 0 !important;
     }
+
+    .des-slider p{
+        font-size: 14px !important;
+    }
+
     .bg-block-client{
         display: none;
     }
@@ -2119,7 +2125,8 @@ footer .container{
 
     .des-about{
         text-align: center;
-        margin-top: 0;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
 
     }
 
