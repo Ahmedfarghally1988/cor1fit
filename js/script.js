@@ -67,7 +67,7 @@ $('.programs .owl-carousel').owlCarousel({
 
 $('.team_work .owl-carousel').owlCarousel({
     loop:true,
-    margin:50,
+    margin:30,
     nav:false,
     dots: true,
     responsive:{
