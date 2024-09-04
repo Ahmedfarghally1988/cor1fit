@@ -2267,18 +2267,22 @@ footer .container{
 .low-core{
     position: relative;
     padding: 0 0 50px 0;
+    margin: 100px 0 100px 0;
 }
 
 .low-core:before{
     position: absolute;
     content: "";
-    background: rgb(58 255 191 / 17%);
     left: 0;
     right: 0;
     top: -50px;
     bottom: 0;
     border-radius: 100% 100% 0 0;
     z-index: -1;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(241,243,244,.5)),color-stop(34.52%,hsla(0,0%,100%,0)));
+    background: linear-gradient(180deg,rgba(241,243,244,.5),hsla(0,0%,100%,0) 34.52%);
+    height: 1000px;
+    width: 100%;
 }
 
 .nav-tabs-home{
@@ -2305,6 +2309,10 @@ footer .container{
 }
 
 @media screen and (max-width: 1024px) {
+
+    .low-core:before{
+        height: 400px;
+    }
     .block-coer {
         padding: 0 0;
     }
