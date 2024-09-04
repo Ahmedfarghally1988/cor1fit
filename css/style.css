@@ -739,13 +739,9 @@ footer .container{
 }
 
 .content-tabs-home img{
-    border-radius: 100%;
-    border: 6px solid #fff;
-    box-shadow: 0 0 5px #ddd;
-    width: 300px;
-    height: 300px;
     float: left;
-    margin: 15px 0 0 0;
+    margin: 75px 0 0 0;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 66.25em) {
@@ -2261,13 +2257,13 @@ footer .container{
 }
 
 .tit-scr{
-    margin-top: 30px;
+    margin: 100px 0 30px 0;
 }
 
 .low-core{
     position: relative;
     padding: 0 0 50px 0;
-    margin: 100px 0 100px 0;
+    margin: 150px 0 100px 0;
 }
 
 .low-core:before{
@@ -2293,6 +2289,8 @@ footer .container{
     scrollbar-width: thin;
     white-space: nowrap;
     overflow-x: scroll;
+
+    padding: 0 0 30px 0;
 }
 
 .low-core::-webkit-scrollbar {
