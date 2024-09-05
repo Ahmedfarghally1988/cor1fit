@@ -2526,7 +2526,13 @@ menu nav .second-level a:before {
 /************ end style menu mobile *********/
 
 @media screen and (max-width: 1024px) {
-
+    .cs_style_1 {
+        width: 100%;
+    }
+    .cs_style_1 i{
+        float: right;
+        margin: 20px 0 30px 15px;
+    }
     .content-tabs-home .row .col-md-6:nth-child(1){
         order: 2;
     }
