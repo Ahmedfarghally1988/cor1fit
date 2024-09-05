@@ -2316,6 +2316,214 @@ footer .container{
     outline: 1px solid slategrey;
 }
 
+
+/************ style menu mobile *************/
+
+.header-mobile{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.menu-toggle {
+    padding: 0;
+    background: #082148;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    position: relative;
+    color: #fff;
+}
+
+
+menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: -16px;
+    display: flex;
+    transition: background-color 0.8s, transform 0.8s;
+    will-change: transform;
+    transform: translateX(-100%);
+    z-index: 10;
+}
+menu:after {
+    content: "";
+    display: flex;
+    height: 100%;
+    flex: 0 0 380px;
+    background-color: rgba(136, 136, 136, 0) !important;
+    transition: background-color 0.8s, transform 0.8s;
+    will-change: transform;
+    z-index: -10;
+    pointer-events: none;
+    transform: translateX(calc(380px * 0.1));
+}
+menu.is-open:after {
+    background-color: rgba(136, 136, 136, 0.8);
+}
+menu.is-open nav {
+    transform: translateX(380px);
+    box-shadow: 1px 0px 3px 0px #888;
+}
+menu.is-first-level nav {
+    background-color: #888;
+}
+menu.is-first-level nav .close {
+    background-color: #888;
+}
+menu.is-first-level nav .close:before {
+    opacity: 0;
+}
+menu.is-first-level nav .close,
+menu.is-first-level nav .first-level > li > a {
+    color: #888;
+    border-color: #888;
+}
+menu .close,
+menu a,
+menu .back {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 1.3;
+    cursor: pointer;
+    text-decoration: none;
+}
+menu .close:before,
+menu a:before,
+menu .back:before {
+    content: "";
+    display: block;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+}
+menu .close {
+    background-color: #082148;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.8s, border-color 0.8s, color 0.8s;
+}
+menu .close:before {
+
+}
+
+.login_mobile{
+    background: #082148;
+}
+
+.login_mobile a{
+    color: #fff;
+    border: 0;
+}
+
+menu nav, menu ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    direction: rtl;
+}
+menu nav {
+    position: relative;
+    width: calc(380px * 0.9);
+    flex: 0 0 calc(380px * 0.9);
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 0px 3px 0px transparent;
+    transition: background-color 0.8s, transform 0.8s, box-shadow 0.8s;
+    transform: translateX(0%);
+    will-change: transform;
+}
+menu nav a {
+    justify-content: space-between;
+    color: #000;
+}
+menu nav .back {
+    justify-content: flex-start;
+    color: #888;
+}
+menu nav .back:before {
+    margin-left: 15px;
+    transform: rotate(180deg);
+    background-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc3LjE3NSA0NzcuMTc1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPHBhdGggZD0iTTE0NS4xODgsMjM4LjU3NWwyMTUuNS0yMTUuNWM1LjMtNS4zLDUuMy0xMy44LDAtMTkuMXMtMTMuOC01LjMtMTkuMSwwbC0yMjUuMSwyMjUuMWMtNS4zLDUuMy01LjMsMTMuOCwwLDE5LjFsMjI1LjEsMjI1ICAgYzIuNiwyLjYsNi4xLDQsOS41LDRzNi45LTEuMyw5LjUtNGM1LjMtNS4zLDUuMy0xMy44LDAtMTkuMUwxNDUuMTg4LDIzOC41NzV6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==");
+}
+menu nav .first-level > li > a {
+    transition: color 0.8s, border-color 0.8s;
+}
+
+menu nav .first-level > li > a.d-block:before{
+    display: none;
+}
+
+menu nav .first-level > li.sub_menu_one > a:before {
+    order: 2;
+    transform: rotate(180deg);
+    background-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ny4xNzUgNDc3LjE3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc3LjE3NSA0NzcuMTc1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8cGF0aCBkPSJNMzYwLjczMSwyMjkuMDc1bC0yMjUuMS0yMjUuMWMtNS4zLTUuMy0xMy44LTUuMy0xOS4xLDBzLTUuMywxMy44LDAsMTkuMWwyMTUuNSwyMTUuNWwtMjE1LjUsMjE1LjUgICBjLTUuMyw1LjMtNS4zLDEzLjgsMCwxOS4xYzIuNiwyLjYsNi4xLDQsOS41LDRjMy40LDAsNi45LTEuMyw5LjUtNGwyMjUuMS0yMjUuMUMzNjUuOTMxLDI0Mi44NzUsMzY1LjkzMSwyMzQuMjc1LDM2MC43MzEsMjI5LjA3NXogICAiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K");
+}
+menu nav .second-level {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.8s, box-shadow 0.8s;
+    will-change: transform;
+    z-index: 10;
+}
+menu nav .second-level.is-second-level {
+    transform: translateX(0);
+    box-shadow: -1px 0px 3px 0px #888;
+}
+menu nav .second-level a {
+    color: #000;
+}
+menu nav .second-level a:before {
+    display: none;
+}
+
+#darkModeMobile{
+    font-size: 24px;
+    position: absolute;
+    left: 60px;
+    top: 7px;
+}
+
+.dark-mode #darkModeMobile .fa-moon{
+    color: #fff;
+}
+
+.logoMobile,
+.logoMobileWhite{
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.logoMobileWhite{
+    display: none;
+}
+
+.dark-mode .logoMobileWhite{
+    display: block;
+}
+.dark-mode .logoMobile{
+    display: none;
+}
+
+
+/************ end style menu mobile *********/
+
 @media screen and (max-width: 1024px) {
 
     .content-tabs-home .row .col-md-6:nth-child(1){
@@ -2366,11 +2574,7 @@ footer .container{
         margin-top: 50px;
     }
     header{
-        background: #000;
-        position: fixed;
-        left: 0;
-        right: 0;
-        z-index: 9;
+
     }
     .btn-dark{
         order: -1;
@@ -2452,7 +2656,6 @@ footer .container{
     .style-video{
         border-radius: 0;
         height: auto;
-        padding: 30px 0;
     }
     .overlay-video {
         border-radius: 0;
@@ -2657,4 +2860,17 @@ body.dark-mode .cta-svg{fill: #082148}
 body.dark-mode .blockDayOne p {background: #000000;}
 body.dark-mode .cont-related-blog ul li h4 a {color: #ffffff;}
 body.dark-mode .text-secondary{color: #fff !important;}
-/*body.dark-mode .overlay-video {background: rgb(0 0 0 / 75%);}*/
+body.dark-mode .block-coer{background: #000000 !important;margin: 0;}
+body.dark-mode .nav-tabs .nav-link {color: #ffffff;}
+body.dark-mode .nav-tabs.nav-tabs-home .nav-item.show .nav-link, body.dark-mode .nav-tabs .nav-link.active {
+    background: #ffffff;
+    color: #000000;
+}
+body.dark-mode menu nav{background-color: #333;}
+body.dark-mode menu .close,
+body.dark-mode menu a,
+body.dark-mode menu .back{border-bottom: 1px solid #dddddd14;}
+body.dark-mode menu nav .second-level{background: #333}
+body.dark-mode menu nav .second-level a {color: #ffffff;}
+body.dark-mode menu nav .back {color: #ffffff;}
+body.dark-mode .header-mobile{background: #082148}

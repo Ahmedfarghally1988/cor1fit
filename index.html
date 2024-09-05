@@ -22,73 +22,130 @@
 
 <body>
 
+
+
 <header>
-    <div class="position-mobile-relative header-sticky position-absolute start-0 end-0 z-3">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="login--botton navbar-brand border text-white border-white fs-6 px-2 rounded-pill" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
-                <a class="login--botton navbar-brand border text-white border-white fs-6 px-3 rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalQuetion">  للاستفسار </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                </button>
-                <div class="px-3 fs-5 btn-dark"> <button id="darkMode" class="icon--moon text-white border-0 bg-transparent"> <i class="fa-solid fa-moon"></i> </button> </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto rtl mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                عن الموقع
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"> من نحن </a></li>
-                                <li><a class="dropdown-item" href="#"> ما هو الكور </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                البرامج التدريبية
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">تدريب الكور للمبتدئين</a></li>
-                                <li><a class="dropdown-item" href="#">تدريب الكور للمحترفين</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الكور - core clinic</a></li>
-                                <li><a class="dropdown-item" href="#">تدريب الكور لكبار السن</a></li>
-                                <li><a class="dropdown-item" href="#">علاج الانفصال العضلي </a></li>
-                                <li><a class="dropdown-item" href="#">تدريب الكور أثناء الحمل</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> أختر عضلات الكور </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">الباقات</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">الاستشارات</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">مقالات</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">تواصل معنا</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex d-none d-md-block">
-                        <div class="logo logo-white">
-                            <img src="images/logo-white.png" alt="" title="" width="auto" height="auto">
-                        </div>
-                        <div class="logo logo-dark">
-                            <img src="images/logo-dark.png" alt="" title="" width="auto" height="auto">
+    <div class="d-none d-md-block d-lg-block">
+        <div class="position-mobile-relative header-sticky position-absolute start-0 end-0 z-3">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="login--botton navbar-brand border text-white border-white fs-6 px-2 rounded-pill" href="#"> <i class="fa fa-user"></i> تسجيل الدخول </a>
+                    <a class="login--botton navbar-brand border text-white border-white fs-6 px-3 rounded-pill" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalQuetion">  للاستفسار </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                    </button>
+                    <div class="px-3 fs-5 btn-dark"> <button id="darkMode" class="icon--moon text-white border-0 bg-transparent"> <i class="fa-solid fa-moon"></i> </button> </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto rtl mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    عن الموقع
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> من نحن </a></li>
+                                    <li><a class="dropdown-item" href="#"> ما هو الكور </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    البرامج التدريبية
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">تدريب الكور للمبتدئين</a></li>
+                                    <li><a class="dropdown-item" href="#">تدريب الكور للمحترفين</a></li>
+                                    <li><a class="dropdown-item" href="#">عيادة الكور - core clinic</a></li>
+                                    <li><a class="dropdown-item" href="#">تدريب الكور لكبار السن</a></li>
+                                    <li><a class="dropdown-item" href="#">علاج الانفصال العضلي </a></li>
+                                    <li><a class="dropdown-item" href="#">تدريب الكور أثناء الحمل</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> أختر عضلات الكور </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الباقات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">الاستشارات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">مقالات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">تواصل معنا</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex d-none d-md-block">
+                            <div class="logo logo-white">
+                                <img src="images/logo-white.png" alt="" title="" width="auto" height="auto">
+                            </div>
+                            <div class="logo logo-dark">
+                                <img src="images/logo-dark.png" alt="" title="" width="auto" height="auto">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
 </header>
 
+<div class="header-mobile d-block d-md-none d-lg-none">
+    <img src="images/logo-dark.png" class="logoMobile">
+    <img src="images/logo-white.png" class="logoMobileWhite">
+    <button id="darkModeMobile" class="icon--moon text-white border-0 bg-transparent" style="color: #000 !important;"> <i class="fa-solid fa-moon"></i> </button>
+    <div class="menu-toggle"><i class="fa-solid fa-bars js-menu"></i></div>
+    <menu class="menu">
+        <nav>
+            <div class="d-flex justify-content-between login_mobile">
+                <a href="#"> الاستفسارات </a>
+                <a href="#">   تسجيل الدخول  <i class="fa fa-user ms-2"></i></a>
+            </div>
+            <ul class="first-level">
+                <li><a href="#" class="d-block"> الرئيسية </a> </li>
+                <li class="sub_menu_one">
+                    <a href="#">عن الموقع</a>
+                    <ul class="second-level">
+                        <li>
+                            <a href="#">من نحن</a>
+                        </li>
+                        <li>
+                            <a href="#">ماهو الكور</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub_menu_one">
+                    <a href="#">البرامج التدريبية</a>
+                    <ul class="second-level">
+                        <li>
+                            <a href="#">تدريب الكور للمبتدئين</a>
+                        </li>
+                        <li>
+                            <a href="#">تدريب الكور للمحترفين</a>
+                        </li>
+                        <li>
+                            <a href="#">تدريب الكور لكبار السن</a>
+                        </li>
+                        <li>
+                            <a href="#">علاج الانفصال العضلي</a>
+                        </li>
+                        <li>
+                            <a href="#">تدريب الكور أثناء الحمل</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="d-block"> أختبر عضلات الكور </a> </li>
+                <li><a href="#" class="d-block"> الباقات </a> </li>
+                <li><a href="#" class="d-block"> الاستشارات </a> </li>
+                <li><a href="#" class="d-block"> مقالات </a> </li>
+                <li><a href="#" class="d-block"> تواصل معنا </a> </li>
+            </ul>
+        </nav>
+    </menu>
+</div>
 
 
 <section class="bannerHome">
@@ -817,20 +874,15 @@
     <span> <a href="#" class="text-white"> Whats app </a> </span>
 </div>
 
-
-
 <div class="bt-support-now theme-btn theme-btn-cart"><i class="fa-solid fa-cart-shopping"></i>
     <span> <a href="#" class="text-white"> Pay Now  </a> </span>
     <label>2</label>
 </div>
-
 <div class="bt-support-now theme-btn theme-btn-social"> <i class="fa-solid fa-share-nodes"></i>
     <span> <a href="#" class="text-white"> <small class="fa-brands fa-facebook"></small>  </a> </span>
     <span> <a href="#" class="text-white"> <small class="fa-brands fa-instagram"></small>  </a> </span>
     <span> <a href="#" class="text-white"> <small class="fa-brands fa-x-twitter"></small>  </a> </span>
 </div>
-
-
 <!-- Modal Video -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -842,7 +894,6 @@
         </div>
     </div>
 </div>
-
 <!-- Modal Banner -->
 <div class="modal fade" id="exampleModalBanner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -853,7 +904,6 @@
         </div>
     </div>
 </div>
-
 <!-- Modal Banner -->
 <div class="modal fade" id="exampleModalQuetion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -898,8 +948,6 @@
         </div>
     </div>
 </div>
-
-
 <!-- Modal Banner -->
 <div class="modal fade" id="overlay">
     <div class="modal-dialog modal-lg">
@@ -923,7 +971,10 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 
+<script>
 
+
+</script>
 
 </body>
 </html>

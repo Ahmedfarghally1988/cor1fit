@@ -206,8 +206,59 @@ $(document).ready(function() {
 
 const toggleButton = document.getElementById('darkMode');
 
+
 // Add an event listener to the button
 toggleButton.addEventListener('click', function() {
     // Toggle the 'dark-mode' class on the body element
     document.body.classList.toggle('dark-mode');
 });
+
+const toggleButton2 = document.getElementById('darkModeMobile');
+toggleButton2.addEventListener('click', function() {
+    // Toggle the 'dark-mode' class on the body element
+    document.body.classList.toggle('dark-mode');
+});
+
+/**
+ Append a back link (ex. on Wordpress website)
+ */
+
+$(".second-level").prepend('<li class="back">السابق</li>');
+
+var toggleLevel = function (e) {
+    var l = e.data.level;
+    var $menu = $("menu");
+    // Toggele first level
+    if (l == 1) {
+        if (
+            $(e.target).hasClass("js-menu") ||
+            ($(".is-open").length && !$(e.target).parents("nav").length)
+        )
+            $menu.toggleClass("is-open");
+    } else if (l == 2) {
+        // Close second level
+        if ($menu.hasClass("is-first-level")) {
+            $(".second-level, menu").removeClass("is-second-level is-first-level");
+        }
+        // Open second level
+        else {
+            $menu
+                .addClass("is-first-level")
+                .find($(this))
+                .next(".second-level")
+                .addClass("is-second-level");
+        }
+    }
+};
+
+/**
+ Toggle submenu
+ */
+
+$(".first-level li.sub_menu_one > a, .back").on("click", { level: 2 }, toggleLevel);
+
+/**
+ Toggle menu
+ */
+
+$(document).on("click", { level: 1 }, toggleLevel);
