@@ -2370,7 +2370,8 @@ menu.is-open:after {
     background-color: rgba(136, 136, 136, 0.8);
 }
 menu.is-open nav {
-    transform: translateX(380px);
+    transform: translateX(100%);
+    display: block;
     box-shadow: 1px 0px 3px 0px #888;
 }
 menu.is-first-level nav {
@@ -2435,8 +2436,8 @@ menu nav, menu ul {
 }
 menu nav {
     position: relative;
-    width: calc(380px * 0.9);
-    flex: 0 0 calc(380px * 0.9);
+    width: calc(100%);
+    flex: 0 0 calc(100%);
     overflow: hidden;
     background-color: #fff;
     box-shadow: 1px 0px 3px 0px transparent;
