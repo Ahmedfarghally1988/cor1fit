@@ -2441,7 +2441,7 @@ menu nav {
     background-color: #fff;
     box-shadow: 1px 0px 3px 0px transparent;
     transition: background-color 0.8s, transform 0.8s, box-shadow 0.8s;
-    transform: translateX(-20%);
+    transform: translateX(0%);
     will-change: transform;
 }
 menu nav a {
