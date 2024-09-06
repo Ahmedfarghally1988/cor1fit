@@ -2521,6 +2521,10 @@ menu nav .second-level a:before {
 /************ end style menu mobile *********/
 
 @media screen and (max-width: 1024px) {
+
+  .block-coer  .col-md-12.mt-5 .text-start{
+      text-align: center !important;
+  }
     .cs_style_1 {
         width: 100%;
     }
